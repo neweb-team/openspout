@@ -2,9 +2,9 @@
 
 namespace Spout\Writer\Common\Manager;
 
-use OpenSpout\Common\Entity\Cell;
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Writer\Common\Manager\RowManager;
+use NWT\OpenSpout\Common\Entity\Cell;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Writer\Common\Manager\RowManager;
 use PHPUnit\Framework\TestCase;
 
 /**

@@ -1,14 +1,14 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Manager;
+namespace NWT\OpenSpout\Reader\XLSX\Manager;
 
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Reader\Exception\XMLProcessingException;
-use OpenSpout\Reader\Wrapper\XMLReader;
-use OpenSpout\Reader\XLSX\Creator\HelperFactory;
-use OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
-use OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
-use OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyInterface;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Reader\Exception\XMLProcessingException;
+use NWT\OpenSpout\Reader\Wrapper\XMLReader;
+use NWT\OpenSpout\Reader\XLSX\Creator\HelperFactory;
+use NWT\OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
+use NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyInterface;
 
 /**
  * This class manages the shared strings defined in the associated XML file.
@@ -92,7 +92,7 @@ class SharedStringsManager
      * The XML file can be really big with sheets containing a lot of data. That is why
      * we need to use a XML reader that provides streaming like the XMLReader library.
      *
-     * @throws \OpenSpout\Common\Exception\IOException If shared strings XML file can't be read
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If shared strings XML file can't be read
      */
     public function extractSharedStrings()
     {
@@ -131,7 +131,7 @@ class SharedStringsManager
      *
      * @param int $sharedStringIndex Index of the shared string in the sharedStrings.xml file
      *
-     * @throws \OpenSpout\Reader\Exception\SharedStringNotFoundException If no shared string found for the given index
+     * @throws \NWT\OpenSpout\Reader\Exception\SharedStringNotFoundException If no shared string found for the given index
      *
      * @return string The shared string at the given index
      */
@@ -153,9 +153,9 @@ class SharedStringsManager
     /**
      * Returns the shared strings unique count, as specified in <sst> tag.
      *
-     * @param \OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader instance
+     * @param \NWT\OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader instance
      *
-     * @throws \OpenSpout\Common\Exception\IOException If sharedStrings.xml is invalid and can't be read
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If sharedStrings.xml is invalid and can't be read
      *
      * @return null|int Number of unique shared strings in the sharedStrings.xml file
      */
@@ -196,7 +196,7 @@ class SharedStringsManager
     /**
      * Processes the shared strings item XML node which the given XML reader is positioned on.
      *
-     * @param \OpenSpout\Reader\Wrapper\XMLReader $xmlReader         XML Reader positioned on a "<si>" node
+     * @param \NWT\OpenSpout\Reader\Wrapper\XMLReader $xmlReader         XML Reader positioned on a "<si>" node
      * @param int                                 $sharedStringIndex Index of the processed shared strings item
      */
     protected function processSharedStringsItem($xmlReader, $sharedStringIndex)

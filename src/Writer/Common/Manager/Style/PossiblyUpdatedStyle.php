@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Manager\Style;
+namespace NWT\OpenSpout\Writer\Common\Manager\Style;
 
-use OpenSpout\Common\Entity\Style\Style;
+use NWT\OpenSpout\Common\Entity\Style\Style;
 
 /**
  * Indicates if style is updated.

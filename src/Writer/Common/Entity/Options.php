@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Entity;
+namespace NWT\OpenSpout\Writer\Common\Entity;
 
 /**
  * Writers' options holder.

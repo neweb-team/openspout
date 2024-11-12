@@ -1,12 +1,12 @@
 <?php
 
-namespace OpenSpout\Writer\ODS;
+namespace NWT\OpenSpout\Writer\ODS;
 
-use OpenSpout\TestUsingResource;
-use OpenSpout\Writer\Common\Creator\WriterEntityFactory;
-use OpenSpout\Writer\Common\Entity\Sheet;
-use OpenSpout\Writer\Exception\InvalidSheetNameException;
-use OpenSpout\Writer\RowCreationHelper;
+use NWT\OpenSpout\TestUsingResource;
+use NWT\OpenSpout\Writer\Common\Creator\WriterEntityFactory;
+use NWT\OpenSpout\Writer\Common\Entity\Sheet;
+use NWT\OpenSpout\Writer\Exception\InvalidSheetNameException;
+use NWT\OpenSpout\Writer\RowCreationHelper;
 use PHPUnit\Framework\TestCase;
 
 /**

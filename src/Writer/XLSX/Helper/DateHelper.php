@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Writer\XLSX\Helper;
+namespace NWT\OpenSpout\Writer\XLSX\Helper;
 
 class DateHelper
 {

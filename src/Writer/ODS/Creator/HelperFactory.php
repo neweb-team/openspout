@@ -1,19 +1,19 @@
 <?php
 
-namespace OpenSpout\Writer\ODS\Creator;
+namespace NWT\OpenSpout\Writer\ODS\Creator;
 
-use OpenSpout\Common\Helper\Escaper;
-use OpenSpout\Common\Helper\StringHelper;
-use OpenSpout\Common\Manager\OptionsManagerInterface;
-use OpenSpout\Writer\Common\Creator\InternalEntityFactory;
-use OpenSpout\Writer\Common\Entity\Options;
-use OpenSpout\Writer\Common\Helper\ZipHelper;
-use OpenSpout\Writer\ODS\Helper\FileSystemHelper;
+use NWT\OpenSpout\Common\Helper\Escaper;
+use NWT\OpenSpout\Common\Helper\StringHelper;
+use NWT\OpenSpout\Common\Manager\OptionsManagerInterface;
+use NWT\OpenSpout\Writer\Common\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Writer\Common\Entity\Options;
+use NWT\OpenSpout\Writer\Common\Helper\ZipHelper;
+use NWT\OpenSpout\Writer\ODS\Helper\FileSystemHelper;
 
 /**
  * Factory for helpers needed by the ODS Writer.
  */
-class HelperFactory extends \OpenSpout\Common\Creator\HelperFactory
+class HelperFactory extends \NWT\OpenSpout\Common\Creator\HelperFactory
 {
     /**
      * @return FileSystemHelper

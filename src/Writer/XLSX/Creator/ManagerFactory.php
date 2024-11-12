@@ -1,19 +1,19 @@
 <?php
 
-namespace OpenSpout\Writer\XLSX\Creator;
+namespace NWT\OpenSpout\Writer\XLSX\Creator;
 
-use OpenSpout\Common\Manager\OptionsManagerInterface;
-use OpenSpout\Writer\Common\Creator\InternalEntityFactory;
-use OpenSpout\Writer\Common\Creator\ManagerFactoryInterface;
-use OpenSpout\Writer\Common\Entity\Options;
-use OpenSpout\Writer\Common\Manager\RowManager;
-use OpenSpout\Writer\Common\Manager\SheetManager;
-use OpenSpout\Writer\Common\Manager\Style\StyleMerger;
-use OpenSpout\Writer\XLSX\Manager\SharedStringsManager;
-use OpenSpout\Writer\XLSX\Manager\Style\StyleManager;
-use OpenSpout\Writer\XLSX\Manager\Style\StyleRegistry;
-use OpenSpout\Writer\XLSX\Manager\WorkbookManager;
-use OpenSpout\Writer\XLSX\Manager\WorksheetManager;
+use NWT\OpenSpout\Common\Manager\OptionsManagerInterface;
+use NWT\OpenSpout\Writer\Common\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Writer\Common\Creator\ManagerFactoryInterface;
+use NWT\OpenSpout\Writer\Common\Entity\Options;
+use NWT\OpenSpout\Writer\Common\Manager\RowManager;
+use NWT\OpenSpout\Writer\Common\Manager\SheetManager;
+use NWT\OpenSpout\Writer\Common\Manager\Style\StyleMerger;
+use NWT\OpenSpout\Writer\XLSX\Manager\SharedStringsManager;
+use NWT\OpenSpout\Writer\XLSX\Manager\Style\StyleManager;
+use NWT\OpenSpout\Writer\XLSX\Manager\Style\StyleRegistry;
+use NWT\OpenSpout\Writer\XLSX\Manager\WorkbookManager;
+use NWT\OpenSpout\Writer\XLSX\Manager\WorksheetManager;
 
 /**
  * Factory for managers needed by the XLSX Writer.

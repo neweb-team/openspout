@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Helper;
+namespace NWT\OpenSpout\Writer\Common\Helper;
 
 /**
  * This class provides helper functions when working with cells.

@@ -1,15 +1,15 @@
 <?php
 
-namespace OpenSpout\Writer\CSV;
+namespace NWT\OpenSpout\Writer\CSV;
 
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Common\Exception\InvalidArgumentException;
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Common\Helper\EncodingHelper;
-use OpenSpout\TestUsingResource;
-use OpenSpout\Writer\Common\Creator\WriterEntityFactory;
-use OpenSpout\Writer\Exception\WriterNotOpenedException;
-use OpenSpout\Writer\RowCreationHelper;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Exception\InvalidArgumentException;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Common\Helper\EncodingHelper;
+use NWT\OpenSpout\TestUsingResource;
+use NWT\OpenSpout\Writer\Common\Creator\WriterEntityFactory;
+use NWT\OpenSpout\Writer\Exception\WriterNotOpenedException;
+use NWT\OpenSpout\Writer\RowCreationHelper;
 use PHPUnit\Framework\TestCase;
 
 /**

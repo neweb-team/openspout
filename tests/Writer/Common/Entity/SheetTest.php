@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Entity;
+namespace NWT\OpenSpout\Writer\Common\Entity;
 
-use OpenSpout\Common\Helper\StringHelper;
-use OpenSpout\Writer\Common\Manager\SheetManager;
-use OpenSpout\Writer\Exception\InvalidSheetNameException;
+use NWT\OpenSpout\Common\Helper\StringHelper;
+use NWT\OpenSpout\Writer\Common\Manager\SheetManager;
+use NWT\OpenSpout\Writer\Exception\InvalidSheetNameException;
 use PHPUnit\Framework\TestCase;
 
 /**

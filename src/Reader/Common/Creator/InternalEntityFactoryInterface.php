@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Reader\Common\Creator;
+namespace NWT\OpenSpout\Reader\Common\Creator;
 
-use OpenSpout\Common\Entity\Cell;
-use OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Entity\Cell;
+use NWT\OpenSpout\Common\Entity\Row;
 
 /**
  * Interface EntityFactoryInterface.

@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Common\Manager;
+namespace NWT\OpenSpout\Common\Manager;
 
 use PHPUnit\Framework\TestCase;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Helper;
+namespace NWT\OpenSpout\Writer\Common\Helper;
 
-use OpenSpout\Writer\Common\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Writer\Common\Creator\InternalEntityFactory;
 
 /**
  * This class provides helper functions to create zip files.

@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Reader\Exception;
+namespace NWT\OpenSpout\Reader\Exception;
 
-use OpenSpout\Common\Exception\SpoutException;
+use NWT\OpenSpout\Common\Exception\SpoutException;
 
 abstract class ReaderException extends SpoutException
 {

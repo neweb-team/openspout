@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Writer;
+namespace NWT\OpenSpout\Writer;
 
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Common\Entity\Style\Style;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Entity\Style\Style;
 
 /**
  * Interface WriterInterface.
@@ -16,7 +16,7 @@ interface WriterInterface
      *
      * @param string $outputFilePath Path of the output file that will contain the data
      *
-     * @throws \OpenSpout\Common\Exception\IOException If the writer cannot be opened or if the given path is not writable
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If the writer cannot be opened or if the given path is not writable
      *
      * @return WriterInterface
      */
@@ -28,7 +28,7 @@ interface WriterInterface
      *
      * @param string $outputFileName Name of the output file that will contain the data. If a path is passed in, only the file name will be kept
      *
-     * @throws \OpenSpout\Common\Exception\IOException If the writer cannot be opened
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If the writer cannot be opened
      *
      * @return WriterInterface
      */
@@ -49,8 +49,8 @@ interface WriterInterface
      *
      * @param Row $row The row to be appended to the stream
      *
-     * @throws \OpenSpout\Writer\Exception\WriterNotOpenedException If the writer has not been opened yet
-     * @throws \OpenSpout\Common\Exception\IOException              If unable to write data
+     * @throws \NWT\OpenSpout\Writer\Exception\WriterNotOpenedException If the writer has not been opened yet
+     * @throws \NWT\OpenSpout\Common\Exception\IOException              If unable to write data
      *
      * @return WriterInterface
      */
@@ -61,9 +61,9 @@ interface WriterInterface
      *
      * @param Row[] $rows The rows to be appended to the stream
      *
-     * @throws \OpenSpout\Common\Exception\InvalidArgumentException If the input param is not valid
-     * @throws \OpenSpout\Writer\Exception\WriterNotOpenedException If the writer has not been opened yet
-     * @throws \OpenSpout\Common\Exception\IOException              If unable to write data
+     * @throws \NWT\OpenSpout\Common\Exception\InvalidArgumentException If the input param is not valid
+     * @throws \NWT\OpenSpout\Writer\Exception\WriterNotOpenedException If the writer has not been opened yet
+     * @throws \NWT\OpenSpout\Common\Exception\IOException              If unable to write data
      *
      * @return WriterInterface
      */

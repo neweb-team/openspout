@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Manager;
+namespace NWT\OpenSpout\Writer\Common\Manager;
 
-use OpenSpout\Common\Entity\Cell;
-use OpenSpout\Common\Entity\Style\Style;
-use OpenSpout\Writer\Common\Manager\Style\StyleMerger;
+use NWT\OpenSpout\Common\Entity\Cell;
+use NWT\OpenSpout\Common\Entity\Style\Style;
+use NWT\OpenSpout\Writer\Common\Manager\Style\StyleMerger;
 
 class CellManager
 {

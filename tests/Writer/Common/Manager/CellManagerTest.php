@@ -2,10 +2,10 @@
 
 namespace Spout\Writer\Common\Manager;
 
-use OpenSpout\Common\Entity\Cell;
-use OpenSpout\Writer\Common\Creator\Style\StyleBuilder;
-use OpenSpout\Writer\Common\Manager\CellManager;
-use OpenSpout\Writer\Common\Manager\Style\StyleMerger;
+use NWT\OpenSpout\Common\Entity\Cell;
+use NWT\OpenSpout\Writer\Common\Creator\Style\StyleBuilder;
+use NWT\OpenSpout\Writer\Common\Manager\CellManager;
+use NWT\OpenSpout\Writer\Common\Manager\Style\StyleMerger;
 use PHPUnit\Framework\TestCase;
 
 /**

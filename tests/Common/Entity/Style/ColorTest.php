@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Common\Entity\Style;
+namespace NWT\OpenSpout\Common\Entity\Style;
 
-use OpenSpout\Common\Exception\InvalidColorException;
+use NWT\OpenSpout\Common\Exception\InvalidColorException;
 use PHPUnit\Framework\TestCase;
 
 /**

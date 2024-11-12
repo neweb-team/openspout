@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenSpout\Writer\XLSX\Manager;
+namespace NWT\OpenSpout\Writer\XLSX\Manager;
 
-use OpenSpout\Writer\Common\Entity\Sheet;
-use OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract;
-use OpenSpout\Writer\XLSX\Helper\FileSystemHelper;
-use OpenSpout\Writer\XLSX\Manager\Style\StyleManager;
+use NWT\OpenSpout\Writer\Common\Entity\Sheet;
+use NWT\OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract;
+use NWT\OpenSpout\Writer\XLSX\Helper\FileSystemHelper;
+use NWT\OpenSpout\Writer\XLSX\Manager\Style\StyleManager;
 
 /**
  * XLSX workbook manager, providing the interfaces to work with workbook.

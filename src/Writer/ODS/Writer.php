@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Writer\ODS;
+namespace NWT\OpenSpout\Writer\ODS;
 
-use OpenSpout\Writer\Common\Entity\Options;
-use OpenSpout\Writer\WriterMultiSheetsAbstract;
+use NWT\OpenSpout\Writer\Common\Entity\Options;
+use NWT\OpenSpout\Writer\WriterMultiSheetsAbstract;
 
 /**
  * This class provides base support to write data to ODS files.
@@ -19,7 +19,7 @@ class Writer extends WriterMultiSheetsAbstract
      *
      * @param string $tempFolder Temporary folder where the files to create the ODS will be stored
      *
-     * @throws \OpenSpout\Writer\Exception\WriterAlreadyOpenedException If the writer was already opened
+     * @throws \NWT\OpenSpout\Writer\Exception\WriterAlreadyOpenedException If the writer was already opened
      *
      * @return Writer
      */

@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Common\Entity\Style;
+namespace NWT\OpenSpout\Common\Entity\Style;
 
-use OpenSpout\Common\Exception\InvalidColorException;
+use NWT\OpenSpout\Common\Exception\InvalidColorException;
 
 /**
  * This class provides constants and functions to work with colors.
@@ -63,7 +63,7 @@ abstract class Color
      *
      * @param int $colorComponent
      *
-     * @throws \OpenSpout\Common\Exception\InvalidColorException
+     * @throws \NWT\OpenSpout\Common\Exception\InvalidColorException
      */
     protected static function throwIfInvalidColorComponentValue($colorComponent)
     {

@@ -1,19 +1,19 @@
 <?php
 
-namespace OpenSpout\Writer;
+namespace NWT\OpenSpout\Writer;
 
-use OpenSpout\Common\Creator\HelperFactory;
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Common\Helper\GlobalFunctionsHelper;
-use OpenSpout\Common\Manager\OptionsManagerInterface;
-use OpenSpout\Writer\Common\Creator\ManagerFactoryInterface;
-use OpenSpout\Writer\Common\Entity\Options;
-use OpenSpout\Writer\Common\Entity\Sheet;
-use OpenSpout\Writer\Common\Manager\WorkbookManagerInterface;
-use OpenSpout\Writer\Exception\SheetNotFoundException;
-use OpenSpout\Writer\Exception\WriterAlreadyOpenedException;
-use OpenSpout\Writer\Exception\WriterNotOpenedException;
+use NWT\OpenSpout\Common\Creator\HelperFactory;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper;
+use NWT\OpenSpout\Common\Manager\OptionsManagerInterface;
+use NWT\OpenSpout\Writer\Common\Creator\ManagerFactoryInterface;
+use NWT\OpenSpout\Writer\Common\Entity\Options;
+use NWT\OpenSpout\Writer\Common\Entity\Sheet;
+use NWT\OpenSpout\Writer\Common\Manager\WorkbookManagerInterface;
+use NWT\OpenSpout\Writer\Exception\SheetNotFoundException;
+use NWT\OpenSpout\Writer\Exception\WriterAlreadyOpenedException;
+use NWT\OpenSpout\Writer\Exception\WriterNotOpenedException;
 
 abstract class WriterMultiSheetsAbstract extends WriterAbstract
 {

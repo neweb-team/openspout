@@ -1,14 +1,14 @@
 <?php
 
-namespace OpenSpout\Reader\CSV;
+namespace NWT\OpenSpout\Reader\CSV;
 
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Common\Helper\EncodingHelper;
-use OpenSpout\Common\Helper\GlobalFunctionsHelper;
-use OpenSpout\Common\Manager\OptionsManagerInterface;
-use OpenSpout\Reader\Common\Entity\Options;
-use OpenSpout\Reader\CSV\Creator\InternalEntityFactory;
-use OpenSpout\Reader\RowIteratorInterface;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Helper\EncodingHelper;
+use NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper;
+use NWT\OpenSpout\Common\Manager\OptionsManagerInterface;
+use NWT\OpenSpout\Reader\Common\Entity\Options;
+use NWT\OpenSpout\Reader\CSV\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Reader\RowIteratorInterface;
 
 /**
  * Iterate over CSV rows.
@@ -44,13 +44,13 @@ class RowIterator implements RowIteratorInterface
     /** @var bool Whether empty rows should be returned or skipped */
     protected $shouldPreserveEmptyRows;
 
-    /** @var \OpenSpout\Common\Helper\EncodingHelper Helper to work with different encodings */
+    /** @var \NWT\OpenSpout\Common\Helper\EncodingHelper Helper to work with different encodings */
     protected $encodingHelper;
 
-    /** @var \OpenSpout\Reader\CSV\Creator\InternalEntityFactory Factory to create entities */
+    /** @var \NWT\OpenSpout\Reader\CSV\Creator\InternalEntityFactory Factory to create entities */
     protected $entityFactory;
 
-    /** @var \OpenSpout\Common\Helper\GlobalFunctionsHelper Helper to work with global functions */
+    /** @var \NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper Helper to work with global functions */
     protected $globalFunctionsHelper;
 
     /**
@@ -105,7 +105,7 @@ class RowIterator implements RowIteratorInterface
      *
      * @see http://php.net/manual/en/iterator.next.php
      *
-     * @throws \OpenSpout\Common\Exception\EncodingConversionException If unable to convert data to UTF-8
+     * @throws \NWT\OpenSpout\Common\Exception\EncodingConversionException If unable to convert data to UTF-8
      */
     #[\ReturnTypeWillChange]
     public function next(): void
@@ -161,7 +161,7 @@ class RowIterator implements RowIteratorInterface
     }
 
     /**
-     * @throws \OpenSpout\Common\Exception\EncodingConversionException If unable to convert data to UTF-8
+     * @throws \NWT\OpenSpout\Common\Exception\EncodingConversionException If unable to convert data to UTF-8
      */
     protected function readDataForNextRow()
     {
@@ -203,7 +203,7 @@ class RowIterator implements RowIteratorInterface
      * As fgetcsv() does not manage correctly encoding for non UTF-8 data,
      * we remove manually whitespace with ltrim or rtrim (depending on the order of the bytes).
      *
-     * @throws \OpenSpout\Common\Exception\EncodingConversionException If unable to convert data to UTF-8
+     * @throws \NWT\OpenSpout\Common\Exception\EncodingConversionException If unable to convert data to UTF-8
      *
      * @return array|false The row for the current file pointer, encoded in UTF-8 or FALSE if nothing to read
      */

@@ -1,17 +1,17 @@
 <?php
 
-namespace OpenSpout\Writer\XLSX\Helper;
+namespace NWT\OpenSpout\Writer\XLSX\Helper;
 
-use OpenSpout\Writer\Common\Entity\Worksheet;
-use OpenSpout\Writer\Common\Helper\FileSystemWithRootFolderHelperInterface;
-use OpenSpout\Writer\Common\Helper\ZipHelper;
-use OpenSpout\Writer\XLSX\Manager\Style\StyleManager;
+use NWT\OpenSpout\Writer\Common\Entity\Worksheet;
+use NWT\OpenSpout\Writer\Common\Helper\FileSystemWithRootFolderHelperInterface;
+use NWT\OpenSpout\Writer\Common\Helper\ZipHelper;
+use NWT\OpenSpout\Writer\XLSX\Manager\Style\StyleManager;
 
 /**
  * This class provides helper functions to help with the file system operations
  * like files/folders creation & deletion for XLSX files.
  */
-class FileSystemHelper extends \OpenSpout\Common\Helper\FileSystemHelper implements FileSystemWithRootFolderHelperInterface
+class FileSystemHelper extends \NWT\OpenSpout\Common\Helper\FileSystemHelper implements FileSystemWithRootFolderHelperInterface
 {
     public const APP_NAME = 'Spout';
 
@@ -31,7 +31,7 @@ class FileSystemHelper extends \OpenSpout\Common\Helper\FileSystemHelper impleme
     /** @var ZipHelper Helper to perform tasks with Zip archive */
     private $zipHelper;
 
-    /** @var \OpenSpout\Common\Helper\Escaper\XLSX Used to escape XML data */
+    /** @var \NWT\OpenSpout\Common\Helper\Escaper\XLSX Used to escape XML data */
     private $escaper;
 
     /** @var string Path to the root folder inside the temp folder where the files to create the XLSX will be stored */
@@ -55,7 +55,7 @@ class FileSystemHelper extends \OpenSpout\Common\Helper\FileSystemHelper impleme
     /**
      * @param string                                $baseFolderPath The path of the base folder where all the I/O can occur
      * @param ZipHelper                             $zipHelper      Helper to perform tasks with Zip archive
-     * @param \OpenSpout\Common\Helper\Escaper\XLSX $escaper        Used to escape XML data
+     * @param \NWT\OpenSpout\Common\Helper\Escaper\XLSX $escaper        Used to escape XML data
      */
     public function __construct($baseFolderPath, $zipHelper, $escaper)
     {
@@ -91,7 +91,7 @@ class FileSystemHelper extends \OpenSpout\Common\Helper\FileSystemHelper impleme
     /**
      * Creates all the folders needed to create a XLSX file, as well as the files that won't change.
      *
-     * @throws \OpenSpout\Common\Exception\IOException If unable to create at least one of the base folders
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If unable to create at least one of the base folders
      */
     public function createBaseFilesAndFolders()
     {
@@ -243,7 +243,7 @@ class FileSystemHelper extends \OpenSpout\Common\Helper\FileSystemHelper impleme
     /**
      * Creates the folder that will be used as root.
      *
-     * @throws \OpenSpout\Common\Exception\IOException If unable to create the folder
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If unable to create the folder
      *
      * @return FileSystemHelper
      */
@@ -257,7 +257,7 @@ class FileSystemHelper extends \OpenSpout\Common\Helper\FileSystemHelper impleme
     /**
      * Creates the "_rels" folder under the root folder as well as the ".rels" file in it.
      *
-     * @throws \OpenSpout\Common\Exception\IOException If unable to create the folder or the ".rels" file
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If unable to create the folder or the ".rels" file
      *
      * @return FileSystemHelper
      */
@@ -273,7 +273,7 @@ class FileSystemHelper extends \OpenSpout\Common\Helper\FileSystemHelper impleme
     /**
      * Creates the ".rels" file under the "_rels" folder (under root).
      *
-     * @throws \OpenSpout\Common\Exception\IOException If unable to create the file
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If unable to create the file
      *
      * @return FileSystemHelper
      */
@@ -296,7 +296,7 @@ class FileSystemHelper extends \OpenSpout\Common\Helper\FileSystemHelper impleme
     /**
      * Creates the "docProps" folder under the root folder as well as the "app.xml" and "core.xml" files in it.
      *
-     * @throws \OpenSpout\Common\Exception\IOException If unable to create the folder or one of the files
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If unable to create the folder or one of the files
      *
      * @return FileSystemHelper
      */
@@ -313,7 +313,7 @@ class FileSystemHelper extends \OpenSpout\Common\Helper\FileSystemHelper impleme
     /**
      * Creates the "app.xml" file under the "docProps" folder.
      *
-     * @throws \OpenSpout\Common\Exception\IOException If unable to create the file
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If unable to create the file
      *
      * @return FileSystemHelper
      */
@@ -336,7 +336,7 @@ class FileSystemHelper extends \OpenSpout\Common\Helper\FileSystemHelper impleme
     /**
      * Creates the "core.xml" file under the "docProps" folder.
      *
-     * @throws \OpenSpout\Common\Exception\IOException If unable to create the file
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If unable to create the file
      *
      * @return FileSystemHelper
      */
@@ -360,7 +360,7 @@ class FileSystemHelper extends \OpenSpout\Common\Helper\FileSystemHelper impleme
     /**
      * Creates the "xl" folder under the root folder as well as its subfolders.
      *
-     * @throws \OpenSpout\Common\Exception\IOException If unable to create at least one of the folders
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If unable to create at least one of the folders
      *
      * @return FileSystemHelper
      */
@@ -376,7 +376,7 @@ class FileSystemHelper extends \OpenSpout\Common\Helper\FileSystemHelper impleme
     /**
      * Creates the "_rels" folder under the "xl" folder.
      *
-     * @throws \OpenSpout\Common\Exception\IOException If unable to create the folder
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If unable to create the folder
      *
      * @return FileSystemHelper
      */
@@ -390,7 +390,7 @@ class FileSystemHelper extends \OpenSpout\Common\Helper\FileSystemHelper impleme
     /**
      * Creates the "worksheets" folder under the "xl" folder.
      *
-     * @throws \OpenSpout\Common\Exception\IOException If unable to create the folder
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If unable to create the folder
      *
      * @return FileSystemHelper
      */

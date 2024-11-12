@@ -1,15 +1,15 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX;
+namespace NWT\OpenSpout\Reader\XLSX;
 
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Common\Helper\GlobalFunctionsHelper;
-use OpenSpout\Common\Manager\OptionsManagerInterface;
-use OpenSpout\Reader\Common\Creator\InternalEntityFactoryInterface;
-use OpenSpout\Reader\Common\Entity\Options;
-use OpenSpout\Reader\ReaderAbstract;
-use OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
-use OpenSpout\Reader\XLSX\Creator\ManagerFactory;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper;
+use NWT\OpenSpout\Common\Manager\OptionsManagerInterface;
+use NWT\OpenSpout\Reader\Common\Creator\InternalEntityFactoryInterface;
+use NWT\OpenSpout\Reader\Common\Entity\Options;
+use NWT\OpenSpout\Reader\ReaderAbstract;
+use NWT\OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Reader\XLSX\Creator\ManagerFactory;
 
 /**
  * This class provides support to read data from a XLSX file.
@@ -22,7 +22,7 @@ class Reader extends ReaderAbstract
     /** @var \ZipArchive */
     protected $zip;
 
-    /** @var \OpenSpout\Reader\XLSX\Manager\SharedStringsManager Manages shared strings */
+    /** @var \NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsManager Manages shared strings */
     protected $sharedStringsManager;
 
     /** @var SheetIterator To iterator over the XLSX sheets */
@@ -67,8 +67,8 @@ class Reader extends ReaderAbstract
      *
      * @param string $filePath Path of the file to be read
      *
-     * @throws \OpenSpout\Common\Exception\IOException            If the file at the given path or its content cannot be read
-     * @throws \OpenSpout\Reader\Exception\NoSheetsFoundException If there are no sheets in the file
+     * @throws \NWT\OpenSpout\Common\Exception\IOException            If the file at the given path or its content cannot be read
+     * @throws \NWT\OpenSpout\Reader\Exception\NoSheetsFoundException If there are no sheets in the file
      */
     protected function openReader($filePath)
     {

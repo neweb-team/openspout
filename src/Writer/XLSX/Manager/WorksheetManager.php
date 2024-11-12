@@ -1,25 +1,25 @@
 <?php
 
-namespace OpenSpout\Writer\XLSX\Manager;
+namespace NWT\OpenSpout\Writer\XLSX\Manager;
 
-use OpenSpout\Common\Entity\Cell;
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Common\Entity\Style\Style;
-use OpenSpout\Common\Exception\InvalidArgumentException;
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Common\Helper\Escaper\XLSX as XLSXEscaper;
-use OpenSpout\Common\Helper\StringHelper;
-use OpenSpout\Common\Manager\OptionsManagerInterface;
-use OpenSpout\Writer\Common\Entity\Options;
-use OpenSpout\Writer\Common\Entity\Worksheet;
-use OpenSpout\Writer\Common\Helper\CellHelper;
-use OpenSpout\Writer\Common\Manager\ManagesCellSize;
-use OpenSpout\Writer\Common\Manager\RegisteredStyle;
-use OpenSpout\Writer\Common\Manager\RowManager;
-use OpenSpout\Writer\Common\Manager\Style\StyleMerger;
-use OpenSpout\Writer\Common\Manager\WorksheetManagerInterface;
-use OpenSpout\Writer\XLSX\Helper\DateHelper;
-use OpenSpout\Writer\XLSX\Manager\Style\StyleManager;
+use NWT\OpenSpout\Common\Entity\Cell;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Entity\Style\Style;
+use NWT\OpenSpout\Common\Exception\InvalidArgumentException;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Common\Helper\Escaper\XLSX as XLSXEscaper;
+use NWT\OpenSpout\Common\Helper\StringHelper;
+use NWT\OpenSpout\Common\Manager\OptionsManagerInterface;
+use NWT\OpenSpout\Writer\Common\Entity\Options;
+use NWT\OpenSpout\Writer\Common\Entity\Worksheet;
+use NWT\OpenSpout\Writer\Common\Helper\CellHelper;
+use NWT\OpenSpout\Writer\Common\Manager\ManagesCellSize;
+use NWT\OpenSpout\Writer\Common\Manager\RegisteredStyle;
+use NWT\OpenSpout\Writer\Common\Manager\RowManager;
+use NWT\OpenSpout\Writer\Common\Manager\Style\StyleMerger;
+use NWT\OpenSpout\Writer\Common\Manager\WorksheetManagerInterface;
+use NWT\OpenSpout\Writer\XLSX\Helper\DateHelper;
+use NWT\OpenSpout\Writer\XLSX\Manager\Style\StyleManager;
 
 /**
  * XLSX worksheet manager, providing the interfaces to work with XLSX worksheets.

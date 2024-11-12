@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Manager;
+namespace NWT\OpenSpout\Writer\Common\Manager;
 
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Writer\Common\Entity\Worksheet;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Writer\Common\Entity\Worksheet;
 
 /**
  * Interface WorksheetManagerInterface
@@ -39,8 +39,8 @@ interface WorksheetManagerInterface
      * @param Worksheet $worksheet The worksheet to add the row to
      * @param Row       $row       The row to be added
      *
-     * @throws \OpenSpout\Common\Exception\IOException              If the data cannot be written
-     * @throws \OpenSpout\Common\Exception\InvalidArgumentException If a cell value's type is not supported
+     * @throws \NWT\OpenSpout\Common\Exception\IOException              If the data cannot be written
+     * @throws \NWT\OpenSpout\Common\Exception\InvalidArgumentException If a cell value's type is not supported
      */
     public function addRow(Worksheet $worksheet, Row $row);
 
@@ -49,7 +49,7 @@ interface WorksheetManagerInterface
      *
      * @param Worksheet $worksheet The worksheet to start
      *
-     * @throws \OpenSpout\Common\Exception\IOException If the sheet data file cannot be opened for writing
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If the sheet data file cannot be opened for writing
      */
     public function startSheet(Worksheet $worksheet);
 

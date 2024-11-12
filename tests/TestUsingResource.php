@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout;
+namespace NWT\OpenSpout;
 
 /**
  * Trait TestUsingResource.

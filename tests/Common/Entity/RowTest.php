@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Common\Entity;
+namespace NWT\OpenSpout\Common\Entity;
 
-use OpenSpout\Common\Entity\Style\Style;
+use NWT\OpenSpout\Common\Entity\Style\Style;
 
 /**
  * @internal

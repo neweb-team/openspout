@@ -1,14 +1,14 @@
 <?php
 
-namespace OpenSpout\Reader\ODS\Creator;
+namespace NWT\OpenSpout\Reader\ODS\Creator;
 
-use OpenSpout\Reader\ODS\Helper\CellValueFormatter;
-use OpenSpout\Reader\ODS\Helper\SettingsHelper;
+use NWT\OpenSpout\Reader\ODS\Helper\CellValueFormatter;
+use NWT\OpenSpout\Reader\ODS\Helper\SettingsHelper;
 
 /**
  * Factory to create helpers.
  */
-class HelperFactory extends \OpenSpout\Common\Creator\HelperFactory
+class HelperFactory extends \NWT\OpenSpout\Common\Creator\HelperFactory
 {
     /**
      * @param bool $shouldFormatDates Whether date/time values should be returned as PHP objects or be formatted as strings
@@ -33,11 +33,11 @@ class HelperFactory extends \OpenSpout\Common\Creator\HelperFactory
     }
 
     /**
-     * @return \OpenSpout\Common\Helper\Escaper\ODS
+     * @return \NWT\OpenSpout\Common\Helper\Escaper\ODS
      */
     public function createStringsEscaper()
     {
         // @noinspection PhpUnnecessaryFullyQualifiedNameInspection
-        return new \OpenSpout\Common\Helper\Escaper\ODS();
+        return new \NWT\OpenSpout\Common\Helper\Escaper\ODS();
     }
 }

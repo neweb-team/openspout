@@ -1,21 +1,21 @@
 <?php
 
-namespace OpenSpout\Writer\XLSX;
+namespace NWT\OpenSpout\Writer\XLSX;
 
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Common\Entity\Style\Border;
-use OpenSpout\Common\Entity\Style\CellAlignment;
-use OpenSpout\Common\Entity\Style\Color;
-use OpenSpout\Common\Entity\Style\Style;
-use OpenSpout\Reader\Wrapper\XMLReader;
-use OpenSpout\TestUsingResource;
-use OpenSpout\Writer\Common\Creator\Style\BorderBuilder;
-use OpenSpout\Writer\Common\Creator\Style\StyleBuilder;
-use OpenSpout\Writer\Common\Creator\WriterEntityFactory;
-use OpenSpout\Writer\Common\Manager\Style\StyleMerger;
-use OpenSpout\Writer\Exception\WriterNotOpenedException;
-use OpenSpout\Writer\RowCreationHelper;
-use OpenSpout\Writer\XLSX\Manager\OptionsManager;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Entity\Style\Border;
+use NWT\OpenSpout\Common\Entity\Style\CellAlignment;
+use NWT\OpenSpout\Common\Entity\Style\Color;
+use NWT\OpenSpout\Common\Entity\Style\Style;
+use NWT\OpenSpout\Reader\Wrapper\XMLReader;
+use NWT\OpenSpout\TestUsingResource;
+use NWT\OpenSpout\Writer\Common\Creator\Style\BorderBuilder;
+use NWT\OpenSpout\Writer\Common\Creator\Style\StyleBuilder;
+use NWT\OpenSpout\Writer\Common\Creator\WriterEntityFactory;
+use NWT\OpenSpout\Writer\Common\Manager\Style\StyleMerger;
+use NWT\OpenSpout\Writer\Exception\WriterNotOpenedException;
+use NWT\OpenSpout\Writer\RowCreationHelper;
+use NWT\OpenSpout\Writer\XLSX\Manager\OptionsManager;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -26,7 +26,7 @@ final class WriterWithStyleTest extends TestCase
     use RowCreationHelper;
     use TestUsingResource;
 
-    /** @var \OpenSpout\Common\Entity\Style\Style */
+    /** @var \NWT\OpenSpout\Common\Entity\Style\Style */
     private $defaultStyle;
 
     protected function setUp(): void
@@ -558,7 +558,7 @@ final class WriterWithStyleTest extends TestCase
     /**
      * @param Row[]                                     $allRows
      * @param string                                    $fileName
-     * @param null|\OpenSpout\Common\Entity\Style\Style $defaultStyle
+     * @param null|\NWT\OpenSpout\Common\Entity\Style\Style $defaultStyle
      *
      * @return Writer
      */

@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Helper;
+namespace NWT\OpenSpout\Reader\XLSX\Helper;
 
-use OpenSpout\Common\Exception\InvalidArgumentException;
+use NWT\OpenSpout\Common\Exception\InvalidArgumentException;
 
 /**
  * This class provides helper functions when working with cells.
@@ -25,7 +25,7 @@ class CellHelper
      *
      * @param string $cellIndex The Excel cell index ('A1', 'BC13', ...)
      *
-     * @throws \OpenSpout\Common\Exception\InvalidArgumentException When the given cell index is invalid
+     * @throws \NWT\OpenSpout\Common\Exception\InvalidArgumentException When the given cell index is invalid
      *
      * @return int
      */

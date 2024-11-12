@@ -1,19 +1,19 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX;
+namespace NWT\OpenSpout\Reader\XLSX;
 
-use OpenSpout\Common\Entity\Cell;
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Reader\Common\Manager\RowManager;
-use OpenSpout\Reader\Common\XMLProcessor;
-use OpenSpout\Reader\Exception\InvalidValueException;
-use OpenSpout\Reader\Exception\XMLProcessingException;
-use OpenSpout\Reader\IteratorInterface;
-use OpenSpout\Reader\Wrapper\XMLReader;
-use OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
-use OpenSpout\Reader\XLSX\Helper\CellHelper;
-use OpenSpout\Reader\XLSX\Helper\CellValueFormatter;
+use NWT\OpenSpout\Common\Entity\Cell;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Reader\Common\Manager\RowManager;
+use NWT\OpenSpout\Reader\Common\XMLProcessor;
+use NWT\OpenSpout\Reader\Exception\InvalidValueException;
+use NWT\OpenSpout\Reader\Exception\XMLProcessingException;
+use NWT\OpenSpout\Reader\IteratorInterface;
+use NWT\OpenSpout\Reader\Wrapper\XMLReader;
+use NWT\OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Reader\XLSX\Helper\CellHelper;
+use NWT\OpenSpout\Reader\XLSX\Helper\CellValueFormatter;
 
 class RowIterator implements IteratorInterface
 {
@@ -35,19 +35,19 @@ class RowIterator implements IteratorInterface
     /** @var string Path of the sheet data XML file as in [Content_Types].xml */
     protected $sheetDataXMLFilePath;
 
-    /** @var \OpenSpout\Reader\Wrapper\XMLReader The XMLReader object that will help read sheet's XML data */
+    /** @var \NWT\OpenSpout\Reader\Wrapper\XMLReader The XMLReader object that will help read sheet's XML data */
     protected $xmlReader;
 
-    /** @var \OpenSpout\Reader\Common\XMLProcessor Helper Object to process XML nodes */
+    /** @var \NWT\OpenSpout\Reader\Common\XMLProcessor Helper Object to process XML nodes */
     protected $xmlProcessor;
 
     /** @var Helper\CellValueFormatter Helper to format cell values */
     protected $cellValueFormatter;
 
-    /** @var \OpenSpout\Reader\Common\Manager\RowManager Manages rows */
+    /** @var \NWT\OpenSpout\Reader\Common\Manager\RowManager Manages rows */
     protected $rowManager;
 
-    /** @var \OpenSpout\Reader\XLSX\Creator\InternalEntityFactory Factory to create entities */
+    /** @var \NWT\OpenSpout\Reader\XLSX\Creator\InternalEntityFactory Factory to create entities */
     protected $entityFactory;
 
     /**
@@ -125,7 +125,7 @@ class RowIterator implements IteratorInterface
      *
      * @see http://php.net/manual/en/iterator.rewind.php
      *
-     * @throws \OpenSpout\Common\Exception\IOException If the sheet data XML cannot be read
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If the sheet data XML cannot be read
      */
     #[\ReturnTypeWillChange]
     public function rewind(): void
@@ -162,8 +162,8 @@ class RowIterator implements IteratorInterface
      *
      * @see http://php.net/manual/en/iterator.next.php
      *
-     * @throws \OpenSpout\Reader\Exception\SharedStringNotFoundException If a shared string was not found
-     * @throws \OpenSpout\Common\Exception\IOException                   If unable to read the sheet data XML
+     * @throws \NWT\OpenSpout\Reader\Exception\SharedStringNotFoundException If a shared string was not found
+     * @throws \NWT\OpenSpout\Common\Exception\IOException                   If unable to read the sheet data XML
      */
     #[\ReturnTypeWillChange]
     public function next(): void
@@ -260,8 +260,8 @@ class RowIterator implements IteratorInterface
     }
 
     /**
-     * @throws \OpenSpout\Reader\Exception\SharedStringNotFoundException If a shared string was not found
-     * @throws \OpenSpout\Common\Exception\IOException                   If unable to read the sheet data XML
+     * @throws \NWT\OpenSpout\Reader\Exception\SharedStringNotFoundException If a shared string was not found
+     * @throws \NWT\OpenSpout\Common\Exception\IOException                   If unable to read the sheet data XML
      */
     protected function readDataForNextRow()
     {
@@ -277,7 +277,7 @@ class RowIterator implements IteratorInterface
     }
 
     /**
-     * @param \OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<dimension>" starting node
+     * @param \NWT\OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<dimension>" starting node
      *
      * @return int A return code that indicates what action should the processor take next
      */
@@ -293,7 +293,7 @@ class RowIterator implements IteratorInterface
     }
 
     /**
-     * @param \OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<row>" starting node
+     * @param \NWT\OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<row>" starting node
      *
      * @return int A return code that indicates what action should the processor take next
      */
@@ -320,7 +320,7 @@ class RowIterator implements IteratorInterface
     }
 
     /**
-     * @param \OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<cell>" starting node
+     * @param \NWT\OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<cell>" starting node
      *
      * @return int A return code that indicates what action should the processor take next
      */
@@ -374,9 +374,9 @@ class RowIterator implements IteratorInterface
     }
 
     /**
-     * @param \OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<row>" node
+     * @param \NWT\OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<row>" node
      *
-     * @throws \OpenSpout\Common\Exception\InvalidArgumentException When the given cell index is invalid
+     * @throws \NWT\OpenSpout\Common\Exception\InvalidArgumentException When the given cell index is invalid
      *
      * @return int Row index
      */
@@ -391,9 +391,9 @@ class RowIterator implements IteratorInterface
     }
 
     /**
-     * @param \OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<c>" node
+     * @param \NWT\OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<c>" node
      *
-     * @throws \OpenSpout\Common\Exception\InvalidArgumentException When the given cell index is invalid
+     * @throws \NWT\OpenSpout\Common\Exception\InvalidArgumentException When the given cell index is invalid
      *
      * @return int Column index
      */

@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Creator\Style;
+namespace NWT\OpenSpout\Writer\Common\Creator\Style;
 
-use OpenSpout\Common\Entity\Style\Border;
-use OpenSpout\Common\Entity\Style\BorderPart;
-use OpenSpout\Common\Entity\Style\Color;
+use NWT\OpenSpout\Common\Entity\Style\Border;
+use NWT\OpenSpout\Common\Entity\Style\BorderPart;
+use NWT\OpenSpout\Common\Entity\Style\Color;
 
 class BorderBuilder
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace OpenSpout\Reader\CSV;
+namespace NWT\OpenSpout\Reader\CSV;
 
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Common\Helper\GlobalFunctionsHelper;
-use OpenSpout\Common\Manager\OptionsManagerInterface;
-use OpenSpout\Reader\Common\Creator\InternalEntityFactoryInterface;
-use OpenSpout\Reader\Common\Entity\Options;
-use OpenSpout\Reader\CSV\Creator\InternalEntityFactory;
-use OpenSpout\Reader\ReaderAbstract;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper;
+use NWT\OpenSpout\Common\Manager\OptionsManagerInterface;
+use NWT\OpenSpout\Reader\Common\Creator\InternalEntityFactoryInterface;
+use NWT\OpenSpout\Reader\Common\Entity\Options;
+use NWT\OpenSpout\Reader\CSV\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Reader\ReaderAbstract;
 
 /**
  * This class provides support to read data from a CSV file.
@@ -97,7 +97,7 @@ class Reader extends ReaderAbstract
      *
      * @param string $filePath Path of the CSV file to be read
      *
-     * @throws \OpenSpout\Common\Exception\IOException
+     * @throws \NWT\OpenSpout\Common\Exception\IOException
      */
     protected function openReader($filePath)
     {

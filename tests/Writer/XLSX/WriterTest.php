@@ -1,19 +1,19 @@
 <?php
 
-namespace OpenSpout\Writer\XLSX;
+namespace NWT\OpenSpout\Writer\XLSX;
 
-use OpenSpout\Common\Entity\Cell;
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Common\Exception\InvalidArgumentException;
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Common\Exception\SpoutException;
-use OpenSpout\Reader\Wrapper\XMLReader;
-use OpenSpout\TestUsingResource;
-use OpenSpout\Writer\Common\Creator\WriterEntityFactory;
-use OpenSpout\Writer\Exception\WriterAlreadyOpenedException;
-use OpenSpout\Writer\Exception\WriterNotOpenedException;
-use OpenSpout\Writer\RowCreationHelper;
-use OpenSpout\Writer\XLSX\Manager\WorksheetManager;
+use NWT\OpenSpout\Common\Entity\Cell;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Exception\InvalidArgumentException;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Common\Exception\SpoutException;
+use NWT\OpenSpout\Reader\Wrapper\XMLReader;
+use NWT\OpenSpout\TestUsingResource;
+use NWT\OpenSpout\Writer\Common\Creator\WriterEntityFactory;
+use NWT\OpenSpout\Writer\Exception\WriterAlreadyOpenedException;
+use NWT\OpenSpout\Writer\Exception\WriterNotOpenedException;
+use NWT\OpenSpout\Writer\RowCreationHelper;
+use NWT\OpenSpout\Writer\XLSX\Manager\WorksheetManager;
 use PHPUnit\Framework\TestCase;
 
 /**

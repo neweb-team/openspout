@@ -1,17 +1,17 @@
 <?php
 
-namespace OpenSpout\Writer\ODS\Creator;
+namespace NWT\OpenSpout\Writer\ODS\Creator;
 
-use OpenSpout\Common\Manager\OptionsManagerInterface;
-use OpenSpout\Writer\Common\Creator\InternalEntityFactory;
-use OpenSpout\Writer\Common\Creator\ManagerFactoryInterface;
-use OpenSpout\Writer\Common\Entity\Options;
-use OpenSpout\Writer\Common\Manager\SheetManager;
-use OpenSpout\Writer\Common\Manager\Style\StyleMerger;
-use OpenSpout\Writer\ODS\Manager\Style\StyleManager;
-use OpenSpout\Writer\ODS\Manager\Style\StyleRegistry;
-use OpenSpout\Writer\ODS\Manager\WorkbookManager;
-use OpenSpout\Writer\ODS\Manager\WorksheetManager;
+use NWT\OpenSpout\Common\Manager\OptionsManagerInterface;
+use NWT\OpenSpout\Writer\Common\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Writer\Common\Creator\ManagerFactoryInterface;
+use NWT\OpenSpout\Writer\Common\Entity\Options;
+use NWT\OpenSpout\Writer\Common\Manager\SheetManager;
+use NWT\OpenSpout\Writer\Common\Manager\Style\StyleMerger;
+use NWT\OpenSpout\Writer\ODS\Manager\Style\StyleManager;
+use NWT\OpenSpout\Writer\ODS\Manager\Style\StyleRegistry;
+use NWT\OpenSpout\Writer\ODS\Manager\WorkbookManager;
+use NWT\OpenSpout\Writer\ODS\Manager\WorksheetManager;
 
 /**
  * Factory for managers needed by the ODS Writer.

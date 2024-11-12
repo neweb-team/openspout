@@ -1,12 +1,12 @@
 <?php
 
-namespace OpenSpout\Reader\CSV;
+namespace NWT\OpenSpout\Reader\CSV;
 
-use OpenSpout\Reader\SheetInterface;
+use NWT\OpenSpout\Reader\SheetInterface;
 
 class Sheet implements SheetInterface
 {
-    /** @var \OpenSpout\Reader\CSV\RowIterator To iterate over the CSV's rows */
+    /** @var \NWT\OpenSpout\Reader\CSV\RowIterator To iterate over the CSV's rows */
     protected $rowIterator;
 
     /**
@@ -18,7 +18,7 @@ class Sheet implements SheetInterface
     }
 
     /**
-     * @return \OpenSpout\Reader\CSV\RowIterator
+     * @return \NWT\OpenSpout\Reader\CSV\RowIterator
      */
     public function getRowIterator()
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Reader;
+namespace NWT\OpenSpout\Reader;
 
 /**
  * Interface ReaderInterface.
@@ -13,14 +13,14 @@ interface ReaderInterface
      *
      * @param string $filePath Path of the file to be read
      *
-     * @throws \OpenSpout\Common\Exception\IOException
+     * @throws \NWT\OpenSpout\Common\Exception\IOException
      */
     public function open($filePath);
 
     /**
      * Returns an iterator to iterate over sheets.
      *
-     * @throws \OpenSpout\Reader\Exception\ReaderNotOpenedException If called before opening the reader
+     * @throws \NWT\OpenSpout\Reader\Exception\ReaderNotOpenedException If called before opening the reader
      *
      * @return SheetIteratorInterface To iterate over sheets
      */

@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Common\Entity\Style;
+namespace NWT\OpenSpout\Common\Entity\Style;
 
 /**
  * Represents a style to be applied to a cell.

@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Common\Exception;
+namespace NWT\OpenSpout\Common\Exception;
 
 class UnsupportedTypeException extends SpoutException
 {

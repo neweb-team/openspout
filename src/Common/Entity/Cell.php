@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Common\Entity;
+namespace NWT\OpenSpout\Common\Entity;
 
-use OpenSpout\Common\Entity\Style\Style;
-use OpenSpout\Common\Helper\CellTypeHelper;
+use NWT\OpenSpout\Common\Entity\Style\Style;
+use NWT\OpenSpout\Common\Helper\CellTypeHelper;
 
 class Cell
 {

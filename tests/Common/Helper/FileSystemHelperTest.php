@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Common\Helper;
+namespace NWT\OpenSpout\Common\Helper;
 
-use OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Common\Exception\IOException;
 use PHPUnit\Framework\TestCase;
 
 /**

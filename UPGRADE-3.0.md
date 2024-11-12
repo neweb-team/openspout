@@ -18,7 +18,7 @@ Reader changes
 Creating a reader should now be done through the Reader `ReaderEntityFactory`, instead of using the `ReaderFactory`.
 Also, the `ReaderFactory::create($type)` method was removed and replaced by methods for each reader:
 ```php
-use OpenSpout\Reader\Common\Creator\ReaderEntityFactory; // namespace is no longer "OpenSpout\Reader"
+use NWT\OpenSpout\Reader\Common\Creator\ReaderEntityFactory; // namespace is no longer "OpenSpout\Reader"
 ...
 $reader = ReaderEntityFactory::createXLSXReader(); // replaces ReaderFactory::create(Type::XLSX)
 $reader = ReaderEntityFactory::createCSVReader();  // replaces ReaderFactory::create(Type::CSV)
@@ -44,7 +44,7 @@ Writer creation follows the same change as the reader. It should now be done thr
 Also, the `WriterFactory::create($type)` method was removed and replaced by methods for each writer:
 
 ```php
-use OpenSpout\Writer\Common\Creator\WriterEntityFactory; // namespace is no longer "OpenSpout\Writer"
+use NWT\OpenSpout\Writer\Common\Creator\WriterEntityFactory; // namespace is no longer "OpenSpout\Writer"
 ...
 $writer = WriterEntityFactory::createXLSXWriter(); // replaces WriterFactory::create(Type::XLSX)
 $writer = WriterEntityFactory::createCSVWriter();  // replaces WriterFactory::create(Type::CSV)

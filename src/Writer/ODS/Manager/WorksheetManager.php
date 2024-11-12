@@ -1,26 +1,26 @@
 <?php
 
-namespace OpenSpout\Writer\ODS\Manager;
+namespace NWT\OpenSpout\Writer\ODS\Manager;
 
-use OpenSpout\Common\Entity\Cell;
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Common\Entity\Style\Style;
-use OpenSpout\Common\Exception\InvalidArgumentException;
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Common\Helper\Escaper\ODS as ODSEscaper;
-use OpenSpout\Common\Helper\StringHelper;
-use OpenSpout\Writer\Common\Entity\Worksheet;
-use OpenSpout\Writer\Common\Manager\RegisteredStyle;
-use OpenSpout\Writer\Common\Manager\Style\StyleMerger;
-use OpenSpout\Writer\Common\Manager\WorksheetManagerInterface;
-use OpenSpout\Writer\ODS\Manager\Style\StyleManager;
+use NWT\OpenSpout\Common\Entity\Cell;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Entity\Style\Style;
+use NWT\OpenSpout\Common\Exception\InvalidArgumentException;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Common\Helper\Escaper\ODS as ODSEscaper;
+use NWT\OpenSpout\Common\Helper\StringHelper;
+use NWT\OpenSpout\Writer\Common\Entity\Worksheet;
+use NWT\OpenSpout\Writer\Common\Manager\RegisteredStyle;
+use NWT\OpenSpout\Writer\Common\Manager\Style\StyleMerger;
+use NWT\OpenSpout\Writer\Common\Manager\WorksheetManagerInterface;
+use NWT\OpenSpout\Writer\ODS\Manager\Style\StyleManager;
 
 /**
  * ODS worksheet manager, providing the interfaces to work with ODS worksheets.
  */
 class WorksheetManager implements WorksheetManagerInterface
 {
-    /** @var \OpenSpout\Common\Helper\Escaper\ODS Strings escaper */
+    /** @var \NWT\OpenSpout\Common\Helper\Escaper\ODS Strings escaper */
     private $stringsEscaper;
 
     /** @var StringHelper String helper */
@@ -52,7 +52,7 @@ class WorksheetManager implements WorksheetManagerInterface
      *
      * @param Worksheet $worksheet The worksheet to start
      *
-     * @throws \OpenSpout\Common\Exception\IOException If the sheet data file cannot be opened for writing
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If the sheet data file cannot be opened for writing
      */
     public function startSheet(Worksheet $worksheet)
     {

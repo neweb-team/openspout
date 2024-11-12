@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Helper;
+namespace NWT\OpenSpout\Reader\XLSX\Helper;
 
 /**
  * This class provides helper functions to format Excel dates.

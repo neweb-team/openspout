@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Reader\Common;
+namespace NWT\OpenSpout\Reader\Common;
 
-use OpenSpout\Reader\Wrapper\XMLReader;
+use NWT\OpenSpout\Reader\Wrapper\XMLReader;
 
 /**
  * Helps process XML files.
@@ -21,14 +21,14 @@ class XMLProcessor
     public const PROCESSING_CONTINUE = 1;
     public const PROCESSING_STOP = 2;
 
-    /** @var \OpenSpout\Reader\Wrapper\XMLReader The XMLReader object that will help read sheet's XML data */
+    /** @var \NWT\OpenSpout\Reader\Wrapper\XMLReader The XMLReader object that will help read sheet's XML data */
     protected $xmlReader;
 
     /** @var array Registered callbacks */
     private $callbacks = [];
 
     /**
-     * @param \OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object
+     * @param \NWT\OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object
      */
     public function __construct($xmlReader)
     {
@@ -54,7 +54,7 @@ class XMLProcessor
      * Resumes the reading of the XML file where it was left off.
      * Stops whenever a callback indicates that reading should stop or at the end of the file.
      *
-     * @throws \OpenSpout\Reader\Exception\XMLProcessingException
+     * @throws \NWT\OpenSpout\Reader\Exception\XMLProcessingException
      */
     public function readUntilStopped()
     {

@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Manager\SharedStringsCaching;
+namespace NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsCaching;
 
-use OpenSpout\Reader\Exception\SharedStringNotFoundException;
-use OpenSpout\Reader\XLSX\Creator\HelperFactory;
+use NWT\OpenSpout\Reader\Exception\SharedStringNotFoundException;
+use NWT\OpenSpout\Reader\XLSX\Creator\HelperFactory;
 
 /**
  * This class implements the file-based caching strategy for shared strings.
@@ -15,10 +15,10 @@ class FileBasedStrategy implements CachingStrategyInterface
     /** Value to use to escape the line feed character ("\n") */
     public const ESCAPED_LINE_FEED_CHARACTER = '_x000A_';
 
-    /** @var \OpenSpout\Common\Helper\GlobalFunctionsHelper Helper to work with global functions */
+    /** @var \NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper Helper to work with global functions */
     protected $globalFunctionsHelper;
 
-    /** @var \OpenSpout\Common\Helper\FileSystemHelper Helper to perform file system operations */
+    /** @var \NWT\OpenSpout\Common\Helper\FileSystemHelper Helper to perform file system operations */
     protected $fileSystemHelper;
 
     /** @var string Temporary folder where the temporary files will be created */
@@ -105,7 +105,7 @@ class FileBasedStrategy implements CachingStrategyInterface
      *
      * @param int $sharedStringIndex Index of the shared string in the sharedStrings.xml file
      *
-     * @throws \OpenSpout\Reader\Exception\SharedStringNotFoundException If no shared string found for the given index
+     * @throws \NWT\OpenSpout\Reader\Exception\SharedStringNotFoundException If no shared string found for the given index
      *
      * @return string The shared string at the given index
      */

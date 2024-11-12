@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Helper;
+namespace NWT\OpenSpout\Reader\XLSX\Helper;
 
-use OpenSpout\Reader\Exception\InvalidValueException;
-use OpenSpout\Reader\XLSX\Manager\SharedStringsManager;
-use OpenSpout\Reader\XLSX\Manager\StyleManager;
+use NWT\OpenSpout\Reader\Exception\InvalidValueException;
+use NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsManager;
+use NWT\OpenSpout\Reader\XLSX\Manager\StyleManager;
 
 /**
  * This class provides helper functions to format cell values.
@@ -43,7 +43,7 @@ class CellValueFormatter
     /** @var bool Whether date/time values should use a calendar starting in 1904 instead of 1900 */
     protected $shouldUse1904Dates;
 
-    /** @var \OpenSpout\Common\Helper\Escaper\XLSX Used to unescape XML data */
+    /** @var \NWT\OpenSpout\Common\Helper\Escaper\XLSX Used to unescape XML data */
     protected $escaper;
 
     /**
@@ -51,7 +51,7 @@ class CellValueFormatter
      * @param StyleManager                          $styleManager         Manages styles
      * @param bool                                  $shouldFormatDates    Whether date/time values should be returned as PHP objects or be formatted as strings
      * @param bool                                  $shouldUse1904Dates   Whether date/time values should use a calendar starting in 1904 instead of 1900
-     * @param \OpenSpout\Common\Helper\Escaper\XLSX $escaper              Used to unescape XML data
+     * @param \NWT\OpenSpout\Common\Helper\Escaper\XLSX $escaper              Used to unescape XML data
      */
     public function __construct($sharedStringsManager, $styleManager, $shouldFormatDates, $shouldUse1904Dates, $escaper)
     {

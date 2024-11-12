@@ -1,19 +1,19 @@
 <?php
 
-namespace OpenSpout\Writer\ODS\Manager\Style;
+namespace NWT\OpenSpout\Writer\ODS\Manager\Style;
 
-use OpenSpout\Common\Entity\Style\BorderPart;
-use OpenSpout\Common\Entity\Style\CellAlignment;
-use OpenSpout\Common\Manager\OptionsManagerInterface;
-use OpenSpout\Writer\Common\Entity\Options;
-use OpenSpout\Writer\Common\Entity\Worksheet;
-use OpenSpout\Writer\Common\Manager\ManagesCellSize;
-use OpenSpout\Writer\ODS\Helper\BorderHelper;
+use NWT\OpenSpout\Common\Entity\Style\BorderPart;
+use NWT\OpenSpout\Common\Entity\Style\CellAlignment;
+use NWT\OpenSpout\Common\Manager\OptionsManagerInterface;
+use NWT\OpenSpout\Writer\Common\Entity\Options;
+use NWT\OpenSpout\Writer\Common\Entity\Worksheet;
+use NWT\OpenSpout\Writer\Common\Manager\ManagesCellSize;
+use NWT\OpenSpout\Writer\ODS\Helper\BorderHelper;
 
 /**
  * Manages styles to be applied to a cell.
  */
-class StyleManager extends \OpenSpout\Writer\Common\Manager\Style\StyleManager
+class StyleManager extends \NWT\OpenSpout\Writer\Common\Manager\Style\StyleManager
 {
     use ManagesCellSize;
 
@@ -258,7 +258,7 @@ class StyleManager extends \OpenSpout\Writer\Common\Manager\Style\StyleManager
     /**
      * Returns the contents of the "<style:style>" section, inside "<office:automatic-styles>" section.
      *
-     * @param \OpenSpout\Common\Entity\Style\Style $style
+     * @param \NWT\OpenSpout\Common\Entity\Style\Style $style
      *
      * @return string
      */
@@ -280,7 +280,7 @@ class StyleManager extends \OpenSpout\Writer\Common\Manager\Style\StyleManager
     /**
      * Returns the contents of the "<style:text-properties>" section, inside "<style:style>" section.
      *
-     * @param \OpenSpout\Common\Entity\Style\Style $style
+     * @param \NWT\OpenSpout\Common\Entity\Style\Style $style
      *
      * @return string
      */
@@ -298,7 +298,7 @@ class StyleManager extends \OpenSpout\Writer\Common\Manager\Style\StyleManager
     /**
      * Returns the contents of the fonts definition section, inside "<style:text-properties>" section.
      *
-     * @param \OpenSpout\Common\Entity\Style\Style $style
+     * @param \NWT\OpenSpout\Common\Entity\Style\Style $style
      *
      * @return string
      */
@@ -341,7 +341,7 @@ class StyleManager extends \OpenSpout\Writer\Common\Manager\Style\StyleManager
     /**
      * Returns the contents of the "<style:paragraph-properties>" section, inside "<style:style>" section.
      *
-     * @param \OpenSpout\Common\Entity\Style\Style $style
+     * @param \NWT\OpenSpout\Common\Entity\Style\Style $style
      *
      * @return string
      */
@@ -359,7 +359,7 @@ class StyleManager extends \OpenSpout\Writer\Common\Manager\Style\StyleManager
     /**
      * Returns the contents of the cell alignment definition for the "<style:paragraph-properties>" section.
      *
-     * @param \OpenSpout\Common\Entity\Style\Style $style
+     * @param \NWT\OpenSpout\Common\Entity\Style\Style $style
      *
      * @return string
      */
@@ -397,7 +397,7 @@ class StyleManager extends \OpenSpout\Writer\Common\Manager\Style\StyleManager
     /**
      * Returns the contents of the "<style:table-cell-properties>" section, inside "<style:style>" section.
      *
-     * @param \OpenSpout\Common\Entity\Style\Style $style
+     * @param \NWT\OpenSpout\Common\Entity\Style\Style $style
      *
      * @return string
      */
@@ -435,7 +435,7 @@ class StyleManager extends \OpenSpout\Writer\Common\Manager\Style\StyleManager
     /**
      * Returns the contents of the borders definition for the "<style:table-cell-properties>" section.
      *
-     * @param \OpenSpout\Common\Entity\Style\Style $style
+     * @param \NWT\OpenSpout\Common\Entity\Style\Style $style
      *
      * @return string
      */
@@ -451,7 +451,7 @@ class StyleManager extends \OpenSpout\Writer\Common\Manager\Style\StyleManager
     /**
      * Returns the contents of the background color definition for the "<style:table-cell-properties>" section.
      *
-     * @param \OpenSpout\Common\Entity\Style\Style $style
+     * @param \NWT\OpenSpout\Common\Entity\Style\Style $style
      *
      * @return string
      */

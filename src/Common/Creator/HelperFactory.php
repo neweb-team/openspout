@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenSpout\Common\Creator;
+namespace NWT\OpenSpout\Common\Creator;
 
-use OpenSpout\Common\Helper\EncodingHelper;
-use OpenSpout\Common\Helper\FileSystemHelper;
-use OpenSpout\Common\Helper\GlobalFunctionsHelper;
-use OpenSpout\Common\Helper\StringHelper;
+use NWT\OpenSpout\Common\Helper\EncodingHelper;
+use NWT\OpenSpout\Common\Helper\FileSystemHelper;
+use NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper;
+use NWT\OpenSpout\Common\Helper\StringHelper;
 
 /**
  * Factory to create helpers.

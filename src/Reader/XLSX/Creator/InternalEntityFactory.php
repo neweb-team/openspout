@@ -1,17 +1,17 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Creator;
+namespace NWT\OpenSpout\Reader\XLSX\Creator;
 
-use OpenSpout\Common\Entity\Cell;
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Reader\Common\Creator\InternalEntityFactoryInterface;
-use OpenSpout\Reader\Common\Entity\Options;
-use OpenSpout\Reader\Common\XMLProcessor;
-use OpenSpout\Reader\Wrapper\XMLReader;
-use OpenSpout\Reader\XLSX\Manager\SharedStringsManager;
-use OpenSpout\Reader\XLSX\RowIterator;
-use OpenSpout\Reader\XLSX\Sheet;
-use OpenSpout\Reader\XLSX\SheetIterator;
+use NWT\OpenSpout\Common\Entity\Cell;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Reader\Common\Creator\InternalEntityFactoryInterface;
+use NWT\OpenSpout\Reader\Common\Entity\Options;
+use NWT\OpenSpout\Reader\Common\XMLProcessor;
+use NWT\OpenSpout\Reader\Wrapper\XMLReader;
+use NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsManager;
+use NWT\OpenSpout\Reader\XLSX\RowIterator;
+use NWT\OpenSpout\Reader\XLSX\Sheet;
+use NWT\OpenSpout\Reader\XLSX\SheetIterator;
 
 /**
  * Factory to create entities.
@@ -32,7 +32,7 @@ class InternalEntityFactory implements InternalEntityFactoryInterface
 
     /**
      * @param string                                            $filePath             Path of the file to be read
-     * @param \OpenSpout\Common\Manager\OptionsManagerInterface $optionsManager       Reader's options manager
+     * @param \NWT\OpenSpout\Common\Manager\OptionsManagerInterface $optionsManager       Reader's options manager
      * @param SharedStringsManager                              $sharedStringsManager Manages shared strings
      *
      * @return SheetIterator
@@ -56,7 +56,7 @@ class InternalEntityFactory implements InternalEntityFactoryInterface
      * @param string                                            $sheetName            Name of the sheet
      * @param bool                                              $isSheetActive        Whether the sheet was defined as active
      * @param bool                                              $isSheetVisible       Whether the sheet is visible
-     * @param \OpenSpout\Common\Manager\OptionsManagerInterface $optionsManager       Reader's options manager
+     * @param \NWT\OpenSpout\Common\Manager\OptionsManagerInterface $optionsManager       Reader's options manager
      * @param SharedStringsManager                              $sharedStringsManager Manages shared strings
      *
      * @return Sheet
@@ -125,7 +125,7 @@ class InternalEntityFactory implements InternalEntityFactoryInterface
     /**
      * @param string                                            $filePath             Path of the XLSX file being read
      * @param string                                            $sheetDataXMLFilePath Path of the sheet data XML file as in [Content_Types].xml
-     * @param \OpenSpout\Common\Manager\OptionsManagerInterface $optionsManager       Reader's options manager
+     * @param \NWT\OpenSpout\Common\Manager\OptionsManagerInterface $optionsManager       Reader's options manager
      * @param SharedStringsManager                              $sharedStringsManager Manages shared strings
      *
      * @return RowIterator

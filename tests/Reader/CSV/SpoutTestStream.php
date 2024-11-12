@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Reader\CSV;
+namespace NWT\OpenSpout\Reader\CSV;
 
 /**
  * Custom stream that reads CSV files located in the tests/resources/csv folder.

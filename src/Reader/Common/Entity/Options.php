@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Reader\Common\Entity;
+namespace NWT\OpenSpout\Reader\Common\Entity;
 
 /**
  * Readers' options holder.

@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Manager;
+namespace NWT\OpenSpout\Reader\XLSX\Manager;
 
-use OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
 use PHPUnit\Framework\TestCase;
 
 /**

@@ -1,13 +1,13 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Creator;
+namespace NWT\OpenSpout\Reader\XLSX\Creator;
 
-use OpenSpout\Reader\Common\Manager\RowManager;
-use OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
-use OpenSpout\Reader\XLSX\Manager\SharedStringsManager;
-use OpenSpout\Reader\XLSX\Manager\SheetManager;
-use OpenSpout\Reader\XLSX\Manager\StyleManager;
-use OpenSpout\Reader\XLSX\Manager\WorkbookRelationshipsManager;
+use NWT\OpenSpout\Reader\Common\Manager\RowManager;
+use NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
+use NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsManager;
+use NWT\OpenSpout\Reader\XLSX\Manager\SheetManager;
+use NWT\OpenSpout\Reader\XLSX\Manager\StyleManager;
+use NWT\OpenSpout\Reader\XLSX\Manager\WorkbookRelationshipsManager;
 
 /**
  * Factory to create managers.
@@ -56,8 +56,8 @@ class ManagerFactory
 
     /**
      * @param string                                              $filePath             Path of the XLSX file being read
-     * @param \OpenSpout\Common\Manager\OptionsManagerInterface   $optionsManager       Reader's options manager
-     * @param \OpenSpout\Reader\XLSX\Manager\SharedStringsManager $sharedStringsManager Manages shared strings
+     * @param \NWT\OpenSpout\Common\Manager\OptionsManagerInterface   $optionsManager       Reader's options manager
+     * @param \NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsManager $sharedStringsManager Manages shared strings
      * @param InternalEntityFactory                               $entityFactory        Factory to create entities
      *
      * @return SheetManager

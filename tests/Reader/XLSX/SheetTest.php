@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX;
+namespace NWT\OpenSpout\Reader\XLSX;
 
-use OpenSpout\Reader\Common\Creator\ReaderEntityFactory;
-use OpenSpout\Reader\SheetInterface;
-use OpenSpout\TestUsingResource;
+use NWT\OpenSpout\Reader\Common\Creator\ReaderEntityFactory;
+use NWT\OpenSpout\Reader\SheetInterface;
+use NWT\OpenSpout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**

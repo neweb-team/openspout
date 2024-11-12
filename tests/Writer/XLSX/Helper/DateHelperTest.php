@@ -1,15 +1,15 @@
 <?php
 
-namespace OpenSpout\Writer\XLSX;
+namespace NWT\OpenSpout\Writer\XLSX;
 
 use DateTimeImmutable;
-use OpenSpout\Writer\XLSX\Helper\DateHelper;
+use NWT\OpenSpout\Writer\XLSX\Helper\DateHelper;
 use PHPUnit\Framework\TestCase;
 
 /**
  * @internal
  *
- * @covers \OpenSpout\Writer\XLSX\Helper\DateHelper
+ * @covers \NWT\OpenSpout\Writer\XLSX\Helper\DateHelper
  */
 final class DateHelperTest extends TestCase
 {

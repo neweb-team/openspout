@@ -1,15 +1,15 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX;
+namespace NWT\OpenSpout\Reader\XLSX;
 
-use OpenSpout\Reader\SheetInterface;
+use NWT\OpenSpout\Reader\SheetInterface;
 
 /**
  * Represents a sheet within a XLSX file.
  */
 class Sheet implements SheetInterface
 {
-    /** @var \OpenSpout\Reader\XLSX\RowIterator To iterate over sheet's rows */
+    /** @var \NWT\OpenSpout\Reader\XLSX\RowIterator To iterate over sheet's rows */
     protected $rowIterator;
 
     /** @var int Index of the sheet, based on order in the workbook (zero-based) */
@@ -41,7 +41,7 @@ class Sheet implements SheetInterface
     }
 
     /**
-     * @return \OpenSpout\Reader\XLSX\RowIterator
+     * @return \NWT\OpenSpout\Reader\XLSX\RowIterator
      */
     public function getRowIterator()
     {

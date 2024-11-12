@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Manager\SharedStringsCaching;
+namespace NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsCaching;
 
 /**
  * Interface CachingStrategyInterface.
@@ -26,7 +26,7 @@ interface CachingStrategyInterface
      *
      * @param int $sharedStringIndex Index of the shared string in the sharedStrings.xml file
      *
-     * @throws \OpenSpout\Reader\Exception\SharedStringNotFoundException If no shared string found for the given index
+     * @throws \NWT\OpenSpout\Reader\Exception\SharedStringNotFoundException If no shared string found for the given index
      *
      * @return string The shared string at the given index
      */

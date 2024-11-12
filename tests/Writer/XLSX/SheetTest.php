@@ -1,14 +1,14 @@
 <?php
 
-namespace OpenSpout\Writer\XLSX;
+namespace NWT\OpenSpout\Writer\XLSX;
 
-use OpenSpout\TestUsingResource;
-use OpenSpout\Writer\Common\Creator\WriterEntityFactory;
-use OpenSpout\Writer\Common\Entity\Sheet;
-use OpenSpout\Writer\Exception\InvalidSheetNameException;
-use OpenSpout\Writer\Exception\WriterNotOpenedException;
-use OpenSpout\Writer\RowCreationHelper;
-use OpenSpout\Writer\XLSX\Entity\SheetView;
+use NWT\OpenSpout\TestUsingResource;
+use NWT\OpenSpout\Writer\Common\Creator\WriterEntityFactory;
+use NWT\OpenSpout\Writer\Common\Entity\Sheet;
+use NWT\OpenSpout\Writer\Exception\InvalidSheetNameException;
+use NWT\OpenSpout\Writer\Exception\WriterNotOpenedException;
+use NWT\OpenSpout\Writer\RowCreationHelper;
+use NWT\OpenSpout\Writer\XLSX\Entity\SheetView;
 use PHPUnit\Framework\TestCase;
 
 /**

@@ -1,20 +1,20 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Manager;
+namespace NWT\OpenSpout\Writer\Common\Manager;
 
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Common\Manager\OptionsManagerInterface;
-use OpenSpout\Writer\Common\Creator\InternalEntityFactory;
-use OpenSpout\Writer\Common\Creator\ManagerFactoryInterface;
-use OpenSpout\Writer\Common\Entity\Options;
-use OpenSpout\Writer\Common\Entity\Sheet;
-use OpenSpout\Writer\Common\Entity\Workbook;
-use OpenSpout\Writer\Common\Entity\Worksheet;
-use OpenSpout\Writer\Common\Helper\FileSystemWithRootFolderHelperInterface;
-use OpenSpout\Writer\Common\Manager\Style\StyleManagerInterface;
-use OpenSpout\Writer\Common\Manager\Style\StyleMerger;
-use OpenSpout\Writer\Exception\SheetNotFoundException;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Common\Manager\OptionsManagerInterface;
+use NWT\OpenSpout\Writer\Common\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Writer\Common\Creator\ManagerFactoryInterface;
+use NWT\OpenSpout\Writer\Common\Entity\Options;
+use NWT\OpenSpout\Writer\Common\Entity\Sheet;
+use NWT\OpenSpout\Writer\Common\Entity\Workbook;
+use NWT\OpenSpout\Writer\Common\Entity\Worksheet;
+use NWT\OpenSpout\Writer\Common\Helper\FileSystemWithRootFolderHelperInterface;
+use NWT\OpenSpout\Writer\Common\Manager\Style\StyleManagerInterface;
+use NWT\OpenSpout\Writer\Common\Manager\Style\StyleMerger;
+use NWT\OpenSpout\Writer\Exception\SheetNotFoundException;
 
 /**
  * Abstract workbook manager, providing the generic interfaces to work with workbook.
@@ -144,7 +144,7 @@ abstract class WorkbookManagerAbstract implements WorkbookManagerInterface
      * @param Row $row The row to be added
      *
      * @throws IOException                                          If trying to create a new sheet and unable to open the sheet for writing
-     * @throws \OpenSpout\Common\Exception\InvalidArgumentException
+     * @throws \NWT\OpenSpout\Common\Exception\InvalidArgumentException
      */
     public function addRowToCurrentWorksheet(Row $row)
     {
@@ -245,7 +245,7 @@ abstract class WorkbookManagerAbstract implements WorkbookManagerInterface
     /**
      * Creates a new sheet in the workbook. The current sheet remains unchanged.
      *
-     * @throws \OpenSpout\Common\Exception\IOException If unable to open the sheet for writing
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If unable to open the sheet for writing
      *
      * @return Worksheet The created sheet
      */
@@ -315,7 +315,7 @@ abstract class WorkbookManagerAbstract implements WorkbookManagerInterface
      * @param Row       $row       The row to be added
      *
      * @throws IOException
-     * @throws \OpenSpout\Common\Exception\InvalidArgumentException
+     * @throws \NWT\OpenSpout\Common\Exception\InvalidArgumentException
      */
     private function addRowToWorksheet(Worksheet $worksheet, Row $row)
     {

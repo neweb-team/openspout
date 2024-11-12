@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OpenSpout\Reader;
+namespace NWT\OpenSpout\Reader;
 
 /**
  * Interface IteratorInterface.

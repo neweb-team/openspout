@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Common\Helper;
+namespace NWT\OpenSpout\Common\Helper;
 
-use OpenSpout\Common\Exception\EncodingConversionException;
+use NWT\OpenSpout\Common\Exception\EncodingConversionException;
 
 /**
  * This class provides helper functions to work with encodings.
@@ -23,14 +23,14 @@ class EncodingHelper
     public const BOM_UTF32_LE = "\xFF\xFE\x00\x00";
     public const BOM_UTF32_BE = "\x00\x00\xFE\xFF";
 
-    /** @var \OpenSpout\Common\Helper\GlobalFunctionsHelper Helper to work with global functions */
+    /** @var \NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper Helper to work with global functions */
     protected $globalFunctionsHelper;
 
     /** @var array Map representing the encodings supporting BOMs (key) and their associated BOM (value) */
     protected $supportedEncodingsWithBom;
 
     /**
-     * @param \OpenSpout\Common\Helper\GlobalFunctionsHelper $globalFunctionsHelper
+     * @param \NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper $globalFunctionsHelper
      */
     public function __construct($globalFunctionsHelper)
     {
@@ -73,7 +73,7 @@ class EncodingHelper
      * @param string $string         Non UTF-8 string to be converted
      * @param string $sourceEncoding The encoding used to encode the source string
      *
-     * @throws \OpenSpout\Common\Exception\EncodingConversionException If conversion is not supported or if the conversion failed
+     * @throws \NWT\OpenSpout\Common\Exception\EncodingConversionException If conversion is not supported or if the conversion failed
      *
      * @return string The converted, UTF-8 string
      */
@@ -88,7 +88,7 @@ class EncodingHelper
      * @param string $string         UTF-8 string to be converted
      * @param string $targetEncoding The encoding the string should be re-encoded into
      *
-     * @throws \OpenSpout\Common\Exception\EncodingConversionException If conversion is not supported or if the conversion failed
+     * @throws \NWT\OpenSpout\Common\Exception\EncodingConversionException If conversion is not supported or if the conversion failed
      *
      * @return string The converted string, encoded with the given encoding
      */
@@ -129,7 +129,7 @@ class EncodingHelper
      * @param string $sourceEncoding The encoding used to encode the source string
      * @param string $targetEncoding The encoding the string should be re-encoded into
      *
-     * @throws \OpenSpout\Common\Exception\EncodingConversionException If conversion is not supported or if the conversion failed
+     * @throws \NWT\OpenSpout\Common\Exception\EncodingConversionException If conversion is not supported or if the conversion failed
      *
      * @return string The converted string, encoded with the given encoding
      */

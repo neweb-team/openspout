@@ -1,14 +1,14 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Manager;
+namespace NWT\OpenSpout\Writer\Common\Manager;
 
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Writer\Common\Entity\Sheet;
-use OpenSpout\Writer\Common\Entity\Workbook;
-use OpenSpout\Writer\Common\Entity\Worksheet;
-use OpenSpout\Writer\Exception\SheetNotFoundException;
-use OpenSpout\Writer\Exception\WriterException;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Writer\Common\Entity\Sheet;
+use NWT\OpenSpout\Writer\Common\Entity\Workbook;
+use NWT\OpenSpout\Writer\Common\Entity\Worksheet;
+use NWT\OpenSpout\Writer\Exception\SheetNotFoundException;
+use NWT\OpenSpout\Writer\Exception\WriterException;
 
 /**
  * Interface WorkbookManagerInterface

@@ -1,13 +1,13 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Creator;
+namespace NWT\OpenSpout\Writer\Common\Creator;
 
-use OpenSpout\Common\Entity\Cell;
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Common\Entity\Style\Style;
-use OpenSpout\Common\Exception\UnsupportedTypeException;
-use OpenSpout\Common\Type;
-use OpenSpout\Writer\WriterInterface;
+use NWT\OpenSpout\Common\Entity\Cell;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Entity\Style\Style;
+use NWT\OpenSpout\Common\Exception\UnsupportedTypeException;
+use NWT\OpenSpout\Common\Type;
+use NWT\OpenSpout\Writer\WriterInterface;
 
 /**
  * Factory to create external entities.
@@ -19,7 +19,7 @@ class WriterEntityFactory
      *
      * @param string $writerType Type of the writer to instantiate
      *
-     * @throws \OpenSpout\Common\Exception\UnsupportedTypeException
+     * @throws \NWT\OpenSpout\Common\Exception\UnsupportedTypeException
      *
      * @return WriterInterface
      */
@@ -33,7 +33,7 @@ class WriterEntityFactory
      *
      * @param string $path The path to the spreadsheet file. Supported extensions are .csv, .ods and .xlsx
      *
-     * @throws \OpenSpout\Common\Exception\UnsupportedTypeException
+     * @throws \NWT\OpenSpout\Common\Exception\UnsupportedTypeException
      *
      * @return WriterInterface
      */
@@ -45,7 +45,7 @@ class WriterEntityFactory
     /**
      * This creates an instance of a CSV writer.
      *
-     * @return \OpenSpout\Writer\CSV\Writer
+     * @return \NWT\OpenSpout\Writer\CSV\Writer
      */
     public static function createCSVWriter()
     {
@@ -60,7 +60,7 @@ class WriterEntityFactory
     /**
      * This creates an instance of a XLSX writer.
      *
-     * @return \OpenSpout\Writer\XLSX\Writer
+     * @return \NWT\OpenSpout\Writer\XLSX\Writer
      */
     public static function createXLSXWriter()
     {
@@ -75,7 +75,7 @@ class WriterEntityFactory
     /**
      * This creates an instance of a ODS writer.
      *
-     * @return \OpenSpout\Writer\ODS\Writer
+     * @return \NWT\OpenSpout\Writer\ODS\Writer
      */
     public static function createODSWriter()
     {

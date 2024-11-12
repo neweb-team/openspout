@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Reader\Wrapper;
+namespace NWT\OpenSpout\Reader\Wrapper;
 
-use OpenSpout\Reader\Exception\XMLProcessingException;
+use NWT\OpenSpout\Reader\Exception\XMLProcessingException;
 
 /**
  * Trait XMLInternalErrorsHelper.
@@ -26,7 +26,7 @@ trait XMLInternalErrorsHelper
      * Throws an XMLProcessingException if an error occured.
      * It also always resets the "libxml_use_internal_errors" setting back to its initial value.
      *
-     * @throws \OpenSpout\Reader\Exception\XMLProcessingException
+     * @throws \NWT\OpenSpout\Reader\Exception\XMLProcessingException
      */
     protected function resetXMLInternalErrorsSettingAndThrowIfXMLErrorOccured()
     {

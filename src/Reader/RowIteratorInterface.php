@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace OpenSpout\Reader;
+namespace NWT\OpenSpout\Reader;
 
-use OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Entity\Row;
 
 interface RowIteratorInterface extends IteratorInterface
 {

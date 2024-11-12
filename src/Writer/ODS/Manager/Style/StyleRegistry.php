@@ -1,13 +1,13 @@
 <?php
 
-namespace OpenSpout\Writer\ODS\Manager\Style;
+namespace NWT\OpenSpout\Writer\ODS\Manager\Style;
 
-use OpenSpout\Common\Entity\Style\Style;
+use NWT\OpenSpout\Common\Entity\Style\Style;
 
 /**
  * Registry for all used styles.
  */
-class StyleRegistry extends \OpenSpout\Writer\Common\Manager\Style\StyleRegistry
+class StyleRegistry extends \NWT\OpenSpout\Writer\Common\Manager\Style\StyleRegistry
 {
     /** @var array [FONT_NAME] => [] Map whose keys contain all the fonts used */
     protected $usedFontsSet = [];

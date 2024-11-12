@@ -1,12 +1,12 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Creator\Style;
+namespace NWT\OpenSpout\Writer\Common\Creator\Style;
 
-use OpenSpout\Common\Entity\Style\Border;
-use OpenSpout\Common\Entity\Style\CellAlignment;
-use OpenSpout\Common\Entity\Style\Color;
-use OpenSpout\Common\Exception\InvalidArgumentException;
-use OpenSpout\Writer\Common\Manager\Style\StyleMerger;
+use NWT\OpenSpout\Common\Entity\Style\Border;
+use NWT\OpenSpout\Common\Entity\Style\CellAlignment;
+use NWT\OpenSpout\Common\Entity\Style\Color;
+use NWT\OpenSpout\Common\Exception\InvalidArgumentException;
+use NWT\OpenSpout\Writer\Common\Manager\Style\StyleMerger;
 use PHPUnit\Framework\TestCase;
 
 /**

@@ -1,23 +1,23 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Creator;
+namespace NWT\OpenSpout\Writer\Common\Creator;
 
-use OpenSpout\Common\Creator\HelperFactory;
-use OpenSpout\Common\Exception\UnsupportedTypeException;
-use OpenSpout\Common\Helper\GlobalFunctionsHelper;
-use OpenSpout\Common\Type;
-use OpenSpout\Writer\Common\Creator\Style\StyleBuilder;
-use OpenSpout\Writer\CSV\Manager\OptionsManager as CSVOptionsManager;
-use OpenSpout\Writer\CSV\Writer as CSVWriter;
-use OpenSpout\Writer\ODS\Creator\HelperFactory as ODSHelperFactory;
-use OpenSpout\Writer\ODS\Creator\ManagerFactory as ODSManagerFactory;
-use OpenSpout\Writer\ODS\Manager\OptionsManager as ODSOptionsManager;
-use OpenSpout\Writer\ODS\Writer as ODSWriter;
-use OpenSpout\Writer\WriterInterface;
-use OpenSpout\Writer\XLSX\Creator\HelperFactory as XLSXHelperFactory;
-use OpenSpout\Writer\XLSX\Creator\ManagerFactory as XLSXManagerFactory;
-use OpenSpout\Writer\XLSX\Manager\OptionsManager as XLSXOptionsManager;
-use OpenSpout\Writer\XLSX\Writer as XLSXWriter;
+use NWT\OpenSpout\Common\Creator\HelperFactory;
+use NWT\OpenSpout\Common\Exception\UnsupportedTypeException;
+use NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper;
+use NWT\OpenSpout\Common\Type;
+use NWT\OpenSpout\Writer\Common\Creator\Style\StyleBuilder;
+use NWT\OpenSpout\Writer\CSV\Manager\OptionsManager as CSVOptionsManager;
+use NWT\OpenSpout\Writer\CSV\Writer as CSVWriter;
+use NWT\OpenSpout\Writer\ODS\Creator\HelperFactory as ODSHelperFactory;
+use NWT\OpenSpout\Writer\ODS\Creator\ManagerFactory as ODSManagerFactory;
+use NWT\OpenSpout\Writer\ODS\Manager\OptionsManager as ODSOptionsManager;
+use NWT\OpenSpout\Writer\ODS\Writer as ODSWriter;
+use NWT\OpenSpout\Writer\WriterInterface;
+use NWT\OpenSpout\Writer\XLSX\Creator\HelperFactory as XLSXHelperFactory;
+use NWT\OpenSpout\Writer\XLSX\Creator\ManagerFactory as XLSXManagerFactory;
+use NWT\OpenSpout\Writer\XLSX\Manager\OptionsManager as XLSXOptionsManager;
+use NWT\OpenSpout\Writer\XLSX\Writer as XLSXWriter;
 
 /**
  * This factory is used to create writers, based on the type of the file to be read.
@@ -30,7 +30,7 @@ class WriterFactory
      *
      * @param string $path The path to the spreadsheet file. Supported extensions are .csv,.ods and .xlsx
      *
-     * @throws \OpenSpout\Common\Exception\UnsupportedTypeException
+     * @throws \NWT\OpenSpout\Common\Exception\UnsupportedTypeException
      *
      * @return WriterInterface
      */
@@ -46,7 +46,7 @@ class WriterFactory
      *
      * @param string $writerType Type of the writer to instantiate
      *
-     * @throws \OpenSpout\Common\Exception\UnsupportedTypeException
+     * @throws \NWT\OpenSpout\Common\Exception\UnsupportedTypeException
      *
      * @return WriterInterface
      */

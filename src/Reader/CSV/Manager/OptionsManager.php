@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenSpout\Reader\CSV\Manager;
+namespace NWT\OpenSpout\Reader\CSV\Manager;
 
-use OpenSpout\Common\Helper\EncodingHelper;
-use OpenSpout\Common\Manager\OptionsManagerAbstract;
-use OpenSpout\Reader\Common\Entity\Options;
+use NWT\OpenSpout\Common\Helper\EncodingHelper;
+use NWT\OpenSpout\Common\Manager\OptionsManagerAbstract;
+use NWT\OpenSpout\Reader\Common\Entity\Options;
 
 /**
  * CSV Reader options manager.

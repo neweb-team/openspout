@@ -1,12 +1,12 @@
 <?php
 
-namespace OpenSpout\Writer\CSV;
+namespace NWT\OpenSpout\Writer\CSV;
 
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Common\Helper\EncodingHelper;
-use OpenSpout\Writer\Common\Entity\Options;
-use OpenSpout\Writer\WriterAbstract;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Common\Helper\EncodingHelper;
+use NWT\OpenSpout\Writer\Common\Entity\Options;
+use NWT\OpenSpout\Writer\WriterAbstract;
 
 /**
  * This class provides support to write data to CSV files.

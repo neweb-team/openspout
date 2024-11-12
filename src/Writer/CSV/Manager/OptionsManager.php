@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Writer\CSV\Manager;
+namespace NWT\OpenSpout\Writer\CSV\Manager;
 
-use OpenSpout\Common\Manager\OptionsManagerAbstract;
-use OpenSpout\Writer\Common\Entity\Options;
+use NWT\OpenSpout\Common\Manager\OptionsManagerAbstract;
+use NWT\OpenSpout\Writer\Common\Entity\Options;
 
 /**
  * CSV Writer options manager.

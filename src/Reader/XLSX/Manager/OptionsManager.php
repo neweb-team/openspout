@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Manager;
+namespace NWT\OpenSpout\Reader\XLSX\Manager;
 
-use OpenSpout\Common\Manager\OptionsManagerAbstract;
-use OpenSpout\Reader\Common\Entity\Options;
+use NWT\OpenSpout\Common\Manager\OptionsManagerAbstract;
+use NWT\OpenSpout\Reader\Common\Entity\Options;
 
 /**
  * XLSX Reader options manager.

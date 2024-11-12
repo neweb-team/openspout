@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Reader\ODS;
+namespace NWT\OpenSpout\Reader\ODS;
 
-use OpenSpout\Reader\Common\Creator\ReaderEntityFactory;
-use OpenSpout\TestUsingResource;
+use NWT\OpenSpout\Reader\Common\Creator\ReaderEntityFactory;
+use NWT\OpenSpout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**

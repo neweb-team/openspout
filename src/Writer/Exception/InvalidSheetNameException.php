@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Writer\Exception;
+namespace NWT\OpenSpout\Writer\Exception;
 
 class InvalidSheetNameException extends WriterException
 {

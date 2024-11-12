@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Common\Entity\Style;
+namespace NWT\OpenSpout\Common\Entity\Style;
 
 class Border
 {

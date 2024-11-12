@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Reader;
+namespace NWT\OpenSpout\Reader;
 
 /**
  * Interface IteratorInterface.

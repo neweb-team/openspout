@@ -1,16 +1,16 @@
 <?php
 
-namespace OpenSpout\Writer\XLSX\Manager\Style;
+namespace NWT\OpenSpout\Writer\XLSX\Manager\Style;
 
-use OpenSpout\Common\Entity\Style\BorderPart;
-use OpenSpout\Common\Entity\Style\Color;
-use OpenSpout\Common\Entity\Style\Style;
-use OpenSpout\Writer\XLSX\Helper\BorderHelper;
+use NWT\OpenSpout\Common\Entity\Style\BorderPart;
+use NWT\OpenSpout\Common\Entity\Style\Color;
+use NWT\OpenSpout\Common\Entity\Style\Style;
+use NWT\OpenSpout\Writer\XLSX\Helper\BorderHelper;
 
 /**
  * Manages styles to be applied to a cell.
  */
-class StyleManager extends \OpenSpout\Writer\Common\Manager\Style\StyleManager
+class StyleManager extends \NWT\OpenSpout\Writer\Common\Manager\Style\StyleManager
 {
     /** @var StyleRegistry */
     protected $styleRegistry;

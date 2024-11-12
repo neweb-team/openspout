@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Manager;
+namespace NWT\OpenSpout\Reader\XLSX\Manager;
 
-use OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
 
 /**
  * This class manages XLSX styles.
@@ -165,7 +165,7 @@ class StyleManager
      * For simplicity, the styles attributes are kept in memory. This is possible thanks
      * to the reuse of formats. So 1 million cells should not use 1 million formats.
      *
-     * @param \OpenSpout\Reader\Wrapper\XMLReader $xmlReader XML Reader positioned on the "numFmts" node
+     * @param \NWT\OpenSpout\Reader\Wrapper\XMLReader $xmlReader XML Reader positioned on the "numFmts" node
      */
     protected function extractNumberFormats($xmlReader)
     {
@@ -186,7 +186,7 @@ class StyleManager
      * For simplicity, the styles attributes are kept in memory. This is possible thanks
      * to the reuse of styles. So 1 million cells should not use 1 million styles.
      *
-     * @param \OpenSpout\Reader\Wrapper\XMLReader $xmlReader XML Reader positioned on the "cellXfs" node
+     * @param \NWT\OpenSpout\Reader\Wrapper\XMLReader $xmlReader XML Reader positioned on the "cellXfs" node
      */
     protected function extractStyleAttributes($xmlReader)
     {

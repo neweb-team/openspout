@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Creator;
+namespace NWT\OpenSpout\Writer\Common\Creator;
 
-use OpenSpout\Common\Exception\UnsupportedTypeException;
-use OpenSpout\TestUsingResource;
+use NWT\OpenSpout\Common\Exception\UnsupportedTypeException;
+use NWT\OpenSpout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**

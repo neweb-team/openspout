@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Reader\ODS\Helper;
+namespace NWT\OpenSpout\Reader\ODS\Helper;
 
-use OpenSpout\Reader\Exception\XMLProcessingException;
-use OpenSpout\Reader\ODS\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Reader\Exception\XMLProcessingException;
+use NWT\OpenSpout\Reader\ODS\Creator\InternalEntityFactory;
 
 /**
  * This class provides helper functions to extract data from the "settings.xml" file.

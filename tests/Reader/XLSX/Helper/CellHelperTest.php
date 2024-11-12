@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Helper;
+namespace NWT\OpenSpout\Reader\XLSX\Helper;
 
-use OpenSpout\Common\Exception\InvalidArgumentException;
+use NWT\OpenSpout\Common\Exception\InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 
 /**

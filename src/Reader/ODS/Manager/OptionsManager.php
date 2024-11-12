@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Reader\ODS\Manager;
+namespace NWT\OpenSpout\Reader\ODS\Manager;
 
-use OpenSpout\Common\Manager\OptionsManagerAbstract;
-use OpenSpout\Reader\Common\Entity\Options;
+use NWT\OpenSpout\Common\Manager\OptionsManagerAbstract;
+use NWT\OpenSpout\Reader\Common\Entity\Options;
 
 /**
  * ODS Reader options manager.

@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Entity;
+namespace NWT\OpenSpout\Writer\Common\Entity;
 
-use OpenSpout\Writer\Common\Manager\SheetManager;
-use OpenSpout\Writer\XLSX\Entity\SheetView;
+use NWT\OpenSpout\Writer\Common\Manager\SheetManager;
+use NWT\OpenSpout\Writer\XLSX\Entity\SheetView;
 
 /**
  * External representation of a worksheet.
@@ -80,7 +80,7 @@ class Sheet
      *
      * @param string $name Name of the sheet
      *
-     * @throws \OpenSpout\Writer\Exception\InvalidSheetNameException if the sheet's name is invalid
+     * @throws \NWT\OpenSpout\Writer\Exception\InvalidSheetNameException if the sheet's name is invalid
      *
      * @return Sheet
      */

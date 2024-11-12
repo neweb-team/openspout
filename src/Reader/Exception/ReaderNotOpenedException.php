@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Reader\Exception;
+namespace NWT\OpenSpout\Reader\Exception;
 
 class ReaderNotOpenedException extends ReaderException
 {

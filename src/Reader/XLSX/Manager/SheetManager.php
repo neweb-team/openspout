@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Manager;
+namespace NWT\OpenSpout\Reader\XLSX\Manager;
 
-use OpenSpout\Reader\Common\Entity\Options;
-use OpenSpout\Reader\Common\XMLProcessor;
-use OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
-use OpenSpout\Reader\XLSX\Sheet;
+use NWT\OpenSpout\Reader\Common\Entity\Options;
+use NWT\OpenSpout\Reader\Common\XMLProcessor;
+use NWT\OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Reader\XLSX\Sheet;
 
 /**
  * This class manages XLSX sheets.
@@ -38,19 +38,19 @@ class SheetManager
     /** @var string Path of the XLSX file being read */
     protected $filePath;
 
-    /** @var \OpenSpout\Common\Manager\OptionsManagerInterface Reader's options manager */
+    /** @var \NWT\OpenSpout\Common\Manager\OptionsManagerInterface Reader's options manager */
     protected $optionsManager;
 
-    /** @var \OpenSpout\Reader\XLSX\Manager\SharedStringsManager Manages shared strings */
+    /** @var \NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsManager Manages shared strings */
     protected $sharedStringsManager;
 
-    /** @var \OpenSpout\Common\Helper\GlobalFunctionsHelper Helper to work with global functions */
+    /** @var \NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper Helper to work with global functions */
     protected $globalFunctionsHelper;
 
     /** @var InternalEntityFactory Factory to create entities */
     protected $entityFactory;
 
-    /** @var \OpenSpout\Common\Helper\Escaper\XLSX Used to unescape XML data */
+    /** @var \NWT\OpenSpout\Common\Helper\Escaper\XLSX Used to unescape XML data */
     protected $escaper;
 
     /** @var array List of sheets */
@@ -64,9 +64,9 @@ class SheetManager
 
     /**
      * @param string                                              $filePath             Path of the XLSX file being read
-     * @param \OpenSpout\Common\Manager\OptionsManagerInterface   $optionsManager       Reader's options manager
-     * @param \OpenSpout\Reader\XLSX\Manager\SharedStringsManager $sharedStringsManager Manages shared strings
-     * @param \OpenSpout\Common\Helper\Escaper\XLSX               $escaper              Used to unescape XML data
+     * @param \NWT\OpenSpout\Common\Manager\OptionsManagerInterface   $optionsManager       Reader's options manager
+     * @param \NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsManager $sharedStringsManager Manages shared strings
+     * @param \NWT\OpenSpout\Common\Helper\Escaper\XLSX               $escaper              Used to unescape XML data
      * @param InternalEntityFactory                               $entityFactory        Factory to create entities
      * @param mixed                                               $sharedStringsManager
      */
@@ -108,7 +108,7 @@ class SheetManager
     }
 
     /**
-     * @param \OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<workbookPr>" starting node
+     * @param \NWT\OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<workbookPr>" starting node
      *
      * @return int A return code that indicates what action should the processor take next
      */
@@ -123,7 +123,7 @@ class SheetManager
     }
 
     /**
-     * @param \OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<workbookView>" starting node
+     * @param \NWT\OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<workbookView>" starting node
      *
      * @return int A return code that indicates what action should the processor take next
      */
@@ -137,7 +137,7 @@ class SheetManager
     }
 
     /**
-     * @param \OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<sheet>" starting node
+     * @param \NWT\OpenSpout\Reader\Wrapper\XMLReader $xmlReader XMLReader object, positioned on a "<sheet>" starting node
      *
      * @return int A return code that indicates what action should the processor take next
      */
@@ -163,11 +163,11 @@ class SheetManager
      * We can find the XML file path describing the sheet inside "workbook.xml.res", by mapping with the sheet ID
      * ("r:id" in "workbook.xml", "Id" in "workbook.xml.res").
      *
-     * @param \OpenSpout\Reader\Wrapper\XMLReader $xmlReaderOnSheetNode XML Reader instance, pointing on the node describing the sheet, as defined in "workbook.xml"
+     * @param \NWT\OpenSpout\Reader\Wrapper\XMLReader $xmlReaderOnSheetNode XML Reader instance, pointing on the node describing the sheet, as defined in "workbook.xml"
      * @param int                                 $sheetIndexZeroBased  Index of the sheet, based on order of appearance in the workbook (zero-based)
      * @param bool                                $isSheetActive        Whether this sheet was defined as active
      *
-     * @return \OpenSpout\Reader\XLSX\Sheet Sheet instance
+     * @return \NWT\OpenSpout\Reader\XLSX\Sheet Sheet instance
      */
     protected function getSheetFromSheetXMLNode($xmlReaderOnSheetNode, $sheetIndexZeroBased, $isSheetActive)
     {

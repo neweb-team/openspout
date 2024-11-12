@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Writer\XLSX;
+namespace NWT\OpenSpout\Writer\XLSX;
 
-use OpenSpout\Writer\Common\Entity\Options;
-use OpenSpout\Writer\WriterMultiSheetsAbstract;
+use NWT\OpenSpout\Writer\Common\Entity\Options;
+use NWT\OpenSpout\Writer\WriterMultiSheetsAbstract;
 
 /**
  * This class provides base support to write data to XLSX files.
@@ -19,7 +19,7 @@ class Writer extends WriterMultiSheetsAbstract
      *
      * @param string $tempFolder Temporary folder where the files to create the XLSX will be stored
      *
-     * @throws \OpenSpout\Writer\Exception\WriterAlreadyOpenedException If the writer was already opened
+     * @throws \NWT\OpenSpout\Writer\Exception\WriterAlreadyOpenedException If the writer was already opened
      *
      * @return Writer
      */
@@ -38,7 +38,7 @@ class Writer extends WriterMultiSheetsAbstract
      *
      * @param bool $shouldUseInlineStrings Whether inline or shared strings should be used
      *
-     * @throws \OpenSpout\Writer\Exception\WriterAlreadyOpenedException If the writer was already opened
+     * @throws \NWT\OpenSpout\Writer\Exception\WriterAlreadyOpenedException If the writer was already opened
      *
      * @return Writer
      */

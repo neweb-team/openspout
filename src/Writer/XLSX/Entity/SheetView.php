@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Writer\XLSX\Entity;
+namespace NWT\OpenSpout\Writer\XLSX\Entity;
 
-use OpenSpout\Common\Exception\InvalidArgumentException;
-use OpenSpout\Reader\XLSX\Helper\CellHelper;
+use NWT\OpenSpout\Common\Exception\InvalidArgumentException;
+use NWT\OpenSpout\Reader\XLSX\Helper\CellHelper;
 
 class SheetView
 {

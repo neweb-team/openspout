@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Manager\Style;
+namespace NWT\OpenSpout\Writer\Common\Manager\Style;
 
-use OpenSpout\Common\Entity\Cell;
-use OpenSpout\Common\Entity\Style\Style;
+use NWT\OpenSpout\Common\Entity\Cell;
+use NWT\OpenSpout\Common\Entity\Style\Style;
 
 /**
  * Interface StyleHManagernterface.

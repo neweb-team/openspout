@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Common\Helper;
+namespace NWT\OpenSpout\Common\Helper;
 
-use OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Common\Exception\IOException;
 
 /**
  * This class provides helper functions to help with the file system operations
@@ -27,7 +27,7 @@ class FileSystemHelper implements FileSystemHelperInterface
      * @param string $parentFolderPath The parent folder path under which the folder is going to be created
      * @param string $folderName       The name of the folder to create
      *
-     * @throws \OpenSpout\Common\Exception\IOException If unable to create the folder or if the folder path is not inside of the base folder
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If unable to create the folder or if the folder path is not inside of the base folder
      *
      * @return string Path of the created folder
      */
@@ -53,7 +53,7 @@ class FileSystemHelper implements FileSystemHelperInterface
      * @param string $fileName         The name of the file to create
      * @param string $fileContents     The contents of the file to create
      *
-     * @throws \OpenSpout\Common\Exception\IOException If unable to create the file or if the file path is not inside of the base folder
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If unable to create the file or if the file path is not inside of the base folder
      *
      * @return string Path of the created file
      */
@@ -76,7 +76,7 @@ class FileSystemHelper implements FileSystemHelperInterface
      *
      * @param string $filePath Path of the file to delete
      *
-     * @throws \OpenSpout\Common\Exception\IOException If the file path is not inside of the base folder
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If the file path is not inside of the base folder
      */
     public function deleteFile($filePath)
     {
@@ -92,7 +92,7 @@ class FileSystemHelper implements FileSystemHelperInterface
      *
      * @param string $folderPath Path of the folder to delete
      *
-     * @throws \OpenSpout\Common\Exception\IOException If the folder path is not inside of the base folder
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If the folder path is not inside of the base folder
      */
     public function deleteFolderRecursively($folderPath)
     {
@@ -121,7 +121,7 @@ class FileSystemHelper implements FileSystemHelperInterface
      *
      * @param string $operationFolderPath The path of the folder where the I/O operation should occur
      *
-     * @throws \OpenSpout\Common\Exception\IOException If the folder where the I/O operation should occur
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If the folder where the I/O operation should occur
      *                                                 is not inside the base folder or the base folder does not exist
      */
     protected function throwIfOperationNotInBaseFolder(string $operationFolderPath)

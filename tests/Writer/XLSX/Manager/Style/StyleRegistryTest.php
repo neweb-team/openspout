@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenSpout\Writer\XLSX\Manager\Style;
+namespace NWT\OpenSpout\Writer\XLSX\Manager\Style;
 
-use OpenSpout\Common\Entity\Style\Color;
-use OpenSpout\Writer\Common\Creator\Style\BorderBuilder;
-use OpenSpout\Writer\Common\Creator\Style\StyleBuilder;
+use NWT\OpenSpout\Common\Entity\Style\Color;
+use NWT\OpenSpout\Writer\Common\Creator\Style\BorderBuilder;
+use NWT\OpenSpout\Writer\Common\Creator\Style\StyleBuilder;
 use PHPUnit\Framework\TestCase;
 
 /**

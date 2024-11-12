@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Reader\CSV;
+namespace NWT\OpenSpout\Reader\CSV;
 
-use OpenSpout\Reader\Common\Creator\ReaderEntityFactory;
-use OpenSpout\TestUsingResource;
+use NWT\OpenSpout\Reader\Common\Creator\ReaderEntityFactory;
+use NWT\OpenSpout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**

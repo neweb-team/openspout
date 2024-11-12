@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Writer\Exception;
+namespace NWT\OpenSpout\Writer\Exception;
 
-use OpenSpout\Common\Exception\SpoutException;
+use NWT\OpenSpout\Common\Exception\SpoutException;
 
 abstract class WriterException extends SpoutException
 {

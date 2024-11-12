@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenSpout\Reader\ODS;
+namespace NWT\OpenSpout\Reader\ODS;
 
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Reader\ODS\Creator\InternalEntityFactory;
-use OpenSpout\Reader\ReaderAbstract;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Reader\ODS\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Reader\ReaderAbstract;
 
 /**
  * This class provides support to read data from a ODS file.
@@ -32,8 +32,8 @@ class Reader extends ReaderAbstract
      *
      * @param string $filePath Path of the file to be read
      *
-     * @throws \OpenSpout\Common\Exception\IOException            If the file at the given path or its content cannot be read
-     * @throws \OpenSpout\Reader\Exception\NoSheetsFoundException If there are no sheets in the file
+     * @throws \NWT\OpenSpout\Common\Exception\IOException            If the file at the given path or its content cannot be read
+     * @throws \NWT\OpenSpout\Reader\Exception\NoSheetsFoundException If there are no sheets in the file
      */
     protected function openReader($filePath)
     {

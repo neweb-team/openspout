@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Helper;
+namespace NWT\OpenSpout\Reader\XLSX\Helper;
 
-use OpenSpout\Common\Helper\Escaper;
-use OpenSpout\Reader\Exception\InvalidValueException;
-use OpenSpout\Reader\XLSX\Manager\SharedStringsManager;
-use OpenSpout\Reader\XLSX\Manager\StyleManager;
+use NWT\OpenSpout\Common\Helper\Escaper;
+use NWT\OpenSpout\Reader\Exception\InvalidValueException;
+use NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsManager;
+use NWT\OpenSpout\Reader\XLSX\Manager\StyleManager;
 use PHPUnit\Framework\TestCase;
 
 /**

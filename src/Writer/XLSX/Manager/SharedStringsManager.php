@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Writer\XLSX\Manager;
+namespace NWT\OpenSpout\Writer\XLSX\Manager;
 
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Common\Helper\Escaper;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Common\Helper\Escaper;
 
 /**
  * This class provides functions to write shared strings.
@@ -92,7 +92,7 @@ class SharedStringsManager
     /**
      * Checks if the book has been created. Throws an exception if not created yet.
      *
-     * @throws \OpenSpout\Common\Exception\IOException If the sheet data file cannot be opened for writing
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If the sheet data file cannot be opened for writing
      */
     protected function throwIfSharedStringsFilePointerIsNotAvailable()
     {

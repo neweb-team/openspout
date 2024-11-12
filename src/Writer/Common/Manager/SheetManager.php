@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Manager;
+namespace NWT\OpenSpout\Writer\Common\Manager;
 
-use OpenSpout\Common\Helper\StringHelper;
-use OpenSpout\Writer\Common\Entity\Sheet;
-use OpenSpout\Writer\Exception\InvalidSheetNameException;
+use NWT\OpenSpout\Common\Helper\StringHelper;
+use NWT\OpenSpout\Writer\Common\Entity\Sheet;
+use NWT\OpenSpout\Writer\Exception\InvalidSheetNameException;
 
 /**
  * Sheet manager.
@@ -39,7 +39,7 @@ class SheetManager
      * @param string $name
      * @param Sheet  $sheet The sheet whose future name is checked
      *
-     * @throws \OpenSpout\Writer\Exception\InvalidSheetNameException if the sheet's name is invalid
+     * @throws \NWT\OpenSpout\Writer\Exception\InvalidSheetNameException if the sheet's name is invalid
      */
     public function throwIfNameIsInvalid($name, Sheet $sheet)
     {

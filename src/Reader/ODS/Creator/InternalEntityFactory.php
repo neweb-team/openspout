@@ -1,16 +1,16 @@
 <?php
 
-namespace OpenSpout\Reader\ODS\Creator;
+namespace NWT\OpenSpout\Reader\ODS\Creator;
 
-use OpenSpout\Common\Entity\Cell;
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Reader\Common\Creator\InternalEntityFactoryInterface;
-use OpenSpout\Reader\Common\Entity\Options;
-use OpenSpout\Reader\Common\XMLProcessor;
-use OpenSpout\Reader\ODS\RowIterator;
-use OpenSpout\Reader\ODS\Sheet;
-use OpenSpout\Reader\ODS\SheetIterator;
-use OpenSpout\Reader\Wrapper\XMLReader;
+use NWT\OpenSpout\Common\Entity\Cell;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Reader\Common\Creator\InternalEntityFactoryInterface;
+use NWT\OpenSpout\Reader\Common\Entity\Options;
+use NWT\OpenSpout\Reader\Common\XMLProcessor;
+use NWT\OpenSpout\Reader\ODS\RowIterator;
+use NWT\OpenSpout\Reader\ODS\Sheet;
+use NWT\OpenSpout\Reader\ODS\SheetIterator;
+use NWT\OpenSpout\Reader\Wrapper\XMLReader;
 
 /**
  * Factory to create entities.
@@ -31,7 +31,7 @@ class InternalEntityFactory implements InternalEntityFactoryInterface
 
     /**
      * @param string                                            $filePath       Path of the file to be read
-     * @param \OpenSpout\Common\Manager\OptionsManagerInterface $optionsManager Reader's options manager
+     * @param \NWT\OpenSpout\Common\Manager\OptionsManagerInterface $optionsManager Reader's options manager
      *
      * @return SheetIterator
      */
@@ -49,7 +49,7 @@ class InternalEntityFactory implements InternalEntityFactoryInterface
      * @param string                                            $sheetName      Name of the sheet
      * @param bool                                              $isSheetActive  Whether the sheet was defined as active
      * @param bool                                              $isSheetVisible Whether the sheet is visible
-     * @param \OpenSpout\Common\Manager\OptionsManagerInterface $optionsManager Reader's options manager
+     * @param \NWT\OpenSpout\Common\Manager\OptionsManagerInterface $optionsManager Reader's options manager
      *
      * @return Sheet
      */
@@ -98,7 +98,7 @@ class InternalEntityFactory implements InternalEntityFactoryInterface
 
     /**
      * @param XMLReader                                         $xmlReader      XML Reader
-     * @param \OpenSpout\Common\Manager\OptionsManagerInterface $optionsManager Reader's options manager
+     * @param \NWT\OpenSpout\Common\Manager\OptionsManagerInterface $optionsManager Reader's options manager
      *
      * @return RowIterator
      */

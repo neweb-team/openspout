@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Writer\Exception\Border;
+namespace NWT\OpenSpout\Writer\Exception\Border;
 
-use OpenSpout\Common\Entity\Style\BorderPart;
-use OpenSpout\Writer\Exception\WriterException;
+use NWT\OpenSpout\Common\Entity\Style\BorderPart;
+use NWT\OpenSpout\Writer\Exception\WriterException;
 
 class InvalidNameException extends WriterException
 {

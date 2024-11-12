@@ -1,12 +1,12 @@
 <?php
 
-namespace OpenSpout\Reader\Common\Manager;
+namespace NWT\OpenSpout\Reader\Common\Manager;
 
-use OpenSpout\Common\Entity\Cell;
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Reader\XLSX\Creator\HelperFactory;
-use OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
-use OpenSpout\Reader\XLSX\Creator\ManagerFactory;
+use NWT\OpenSpout\Common\Entity\Cell;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Reader\XLSX\Creator\HelperFactory;
+use NWT\OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Reader\XLSX\Creator\ManagerFactory;
 use PHPUnit\Framework\TestCase;
 
 /**

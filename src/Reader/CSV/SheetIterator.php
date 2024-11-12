@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Reader\CSV;
+namespace NWT\OpenSpout\Reader\CSV;
 
-use OpenSpout\Reader\SheetIteratorInterface;
+use NWT\OpenSpout\Reader\SheetIteratorInterface;
 
 /**
  * Iterate over CSV unique "sheet".

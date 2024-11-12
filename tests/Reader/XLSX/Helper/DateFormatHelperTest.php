@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Helper;
+namespace NWT\OpenSpout\Reader\XLSX\Helper;
 
 use PHPUnit\Framework\TestCase;
 

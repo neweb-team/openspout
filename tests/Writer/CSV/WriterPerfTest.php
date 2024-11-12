@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Writer\CSV;
+namespace NWT\OpenSpout\Writer\CSV;
 
-use OpenSpout\TestUsingResource;
-use OpenSpout\Writer\Common\Creator\WriterEntityFactory;
+use NWT\OpenSpout\TestUsingResource;
+use NWT\OpenSpout\Writer\Common\Creator\WriterEntityFactory;
 use PHPUnit\Framework\TestCase;
 
 /**

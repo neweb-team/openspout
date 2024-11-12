@@ -1,13 +1,13 @@
 <?php
 
-namespace OpenSpout\Reader\ODS;
+namespace NWT\OpenSpout\Reader\ODS;
 
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Reader\Exception\XMLProcessingException;
-use OpenSpout\Reader\IteratorInterface;
-use OpenSpout\Reader\ODS\Creator\InternalEntityFactory;
-use OpenSpout\Reader\ODS\Helper\SettingsHelper;
-use OpenSpout\Reader\Wrapper\XMLReader;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Reader\Exception\XMLProcessingException;
+use NWT\OpenSpout\Reader\IteratorInterface;
+use NWT\OpenSpout\Reader\ODS\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Reader\ODS\Helper\SettingsHelper;
+use NWT\OpenSpout\Reader\Wrapper\XMLReader;
 
 /**
  * Iterate over ODS sheet.
@@ -30,7 +30,7 @@ class SheetIterator implements IteratorInterface
     /** @var string Path of the file to be read */
     protected $filePath;
 
-    /** @var \OpenSpout\Common\Manager\OptionsManagerInterface Reader's options manager */
+    /** @var \NWT\OpenSpout\Common\Manager\OptionsManagerInterface Reader's options manager */
     protected $optionsManager;
 
     /** @var InternalEntityFactory Factory to create entities */
@@ -39,7 +39,7 @@ class SheetIterator implements IteratorInterface
     /** @var XMLReader The XMLReader object that will help read sheet's XML data */
     protected $xmlReader;
 
-    /** @var \OpenSpout\Common\Helper\Escaper\ODS Used to unescape XML data */
+    /** @var \NWT\OpenSpout\Common\Helper\Escaper\ODS Used to unescape XML data */
     protected $escaper;
 
     /** @var bool Whether there are still at least a sheet to be read */
@@ -56,8 +56,8 @@ class SheetIterator implements IteratorInterface
 
     /**
      * @param string                                            $filePath       Path of the file to be read
-     * @param \OpenSpout\Common\Manager\OptionsManagerInterface $optionsManager
-     * @param \OpenSpout\Common\Helper\Escaper\ODS              $escaper        Used to unescape XML data
+     * @param \NWT\OpenSpout\Common\Manager\OptionsManagerInterface $optionsManager
+     * @param \NWT\OpenSpout\Common\Helper\Escaper\ODS              $escaper        Used to unescape XML data
      * @param SettingsHelper                                    $settingsHelper Helper to get data from "settings.xml"
      * @param InternalEntityFactory                             $entityFactory  Factory to create entities
      */
@@ -76,7 +76,7 @@ class SheetIterator implements IteratorInterface
      *
      * @see http://php.net/manual/en/iterator.rewind.php
      *
-     * @throws \OpenSpout\Common\Exception\IOException If unable to open the XML file containing sheets' data
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If unable to open the XML file containing sheets' data
      */
     #[\ReturnTypeWillChange]
     public function rewind()
@@ -132,7 +132,7 @@ class SheetIterator implements IteratorInterface
      *
      * @see http://php.net/manual/en/iterator.current.php
      *
-     * @return \OpenSpout\Reader\ODS\Sheet
+     * @return \NWT\OpenSpout\Reader\ODS\Sheet
      */
     #[\ReturnTypeWillChange]
     public function current()

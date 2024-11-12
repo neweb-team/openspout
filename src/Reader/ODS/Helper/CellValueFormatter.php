@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Reader\ODS\Helper;
+namespace NWT\OpenSpout\Reader\ODS\Helper;
 
-use OpenSpout\Reader\Exception\InvalidValueException;
+use NWT\OpenSpout\Reader\Exception\InvalidValueException;
 
 /**
  * This class provides helper functions to format cell values.
@@ -39,7 +39,7 @@ class CellValueFormatter
     /** @var bool Whether date/time values should be returned as PHP objects or be formatted as strings */
     protected $shouldFormatDates;
 
-    /** @var \OpenSpout\Common\Helper\Escaper\ODS Used to unescape XML data */
+    /** @var \NWT\OpenSpout\Common\Helper\Escaper\ODS Used to unescape XML data */
     protected $escaper;
 
     /** @var array List of XML nodes representing whitespaces and their corresponding value */
@@ -51,7 +51,7 @@ class CellValueFormatter
 
     /**
      * @param bool                                 $shouldFormatDates Whether date/time values should be returned as PHP objects or be formatted as strings
-     * @param \OpenSpout\Common\Helper\Escaper\ODS $escaper           Used to unescape XML data
+     * @param \NWT\OpenSpout\Common\Helper\Escaper\ODS $escaper           Used to unescape XML data
      */
     public function __construct($shouldFormatDates, $escaper)
     {

@@ -1,13 +1,13 @@
 <?php
 
-namespace OpenSpout\Reader;
+namespace NWT\OpenSpout\Reader;
 
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Common\Helper\GlobalFunctionsHelper;
-use OpenSpout\Common\Manager\OptionsManagerInterface;
-use OpenSpout\Reader\Common\Creator\InternalEntityFactoryInterface;
-use OpenSpout\Reader\Common\Entity\Options;
-use OpenSpout\Reader\Exception\ReaderNotOpenedException;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper;
+use NWT\OpenSpout\Common\Manager\OptionsManagerInterface;
+use NWT\OpenSpout\Reader\Common\Creator\InternalEntityFactoryInterface;
+use NWT\OpenSpout\Reader\Common\Entity\Options;
+use NWT\OpenSpout\Reader\Exception\ReaderNotOpenedException;
 
 abstract class ReaderAbstract implements ReaderInterface
 {
@@ -17,7 +17,7 @@ abstract class ReaderAbstract implements ReaderInterface
     /** @var InternalEntityFactoryInterface Factory to create entities */
     protected $entityFactory;
 
-    /** @var \OpenSpout\Common\Helper\GlobalFunctionsHelper Helper to work with global functions */
+    /** @var \NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper Helper to work with global functions */
     protected $globalFunctionsHelper;
 
     /** @var OptionsManagerInterface Writer options manager */
@@ -67,7 +67,7 @@ abstract class ReaderAbstract implements ReaderInterface
      *
      * @param string $filePath Path of the file to be read
      *
-     * @throws \OpenSpout\Common\Exception\IOException If the file at the given path does not exist, is not readable or is corrupted
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If the file at the given path does not exist, is not readable or is corrupted
      */
     public function open($filePath)
     {
@@ -97,7 +97,7 @@ abstract class ReaderAbstract implements ReaderInterface
     /**
      * Returns an iterator to iterate over sheets.
      *
-     * @throws \OpenSpout\Reader\Exception\ReaderNotOpenedException If called before opening the reader
+     * @throws \NWT\OpenSpout\Reader\Exception\ReaderNotOpenedException If called before opening the reader
      *
      * @return SheetIteratorInterface To iterate over sheets
      */

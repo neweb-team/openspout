@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Manager;
+namespace NWT\OpenSpout\Reader\XLSX\Manager;
 
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Reader\Wrapper\XMLReader;
-use OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Reader\Wrapper\XMLReader;
+use NWT\OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
 
 /**
  * This class manages the workbook relationships defined in the associated XML file.
@@ -110,7 +110,7 @@ class WorkbookRelationshipsManager
      * Reads the workbook.xml.rels and extracts the filename associated to the different types.
      * It caches the result so that the file is read only once.
      *
-     * @throws \OpenSpout\Common\Exception\IOException If workbook.xml.rels can't be read
+     * @throws \NWT\OpenSpout\Common\Exception\IOException If workbook.xml.rels can't be read
      *
      * @return array
      */

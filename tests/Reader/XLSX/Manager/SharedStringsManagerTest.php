@@ -1,15 +1,15 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Manager;
+namespace NWT\OpenSpout\Reader\XLSX\Manager;
 
-use OpenSpout\Reader\Exception\SharedStringNotFoundException;
-use OpenSpout\Reader\XLSX\Creator\HelperFactory;
-use OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
-use OpenSpout\Reader\XLSX\Creator\ManagerFactory;
-use OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
-use OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\FileBasedStrategy;
-use OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\InMemoryStrategy;
-use OpenSpout\TestUsingResource;
+use NWT\OpenSpout\Reader\Exception\SharedStringNotFoundException;
+use NWT\OpenSpout\Reader\XLSX\Creator\HelperFactory;
+use NWT\OpenSpout\Reader\XLSX\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Reader\XLSX\Creator\ManagerFactory;
+use NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
+use NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\FileBasedStrategy;
+use NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\InMemoryStrategy;
+use NWT\OpenSpout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**

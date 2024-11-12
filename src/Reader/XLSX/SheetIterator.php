@@ -1,17 +1,17 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX;
+namespace NWT\OpenSpout\Reader\XLSX;
 
-use OpenSpout\Reader\Exception\NoSheetsFoundException;
-use OpenSpout\Reader\IteratorInterface;
-use OpenSpout\Reader\XLSX\Manager\SheetManager;
+use NWT\OpenSpout\Reader\Exception\NoSheetsFoundException;
+use NWT\OpenSpout\Reader\IteratorInterface;
+use NWT\OpenSpout\Reader\XLSX\Manager\SheetManager;
 
 /**
  * Iterate over XLSX sheet.
  */
 class SheetIterator implements IteratorInterface
 {
-    /** @var \OpenSpout\Reader\XLSX\Sheet[] The list of sheet present in the file */
+    /** @var \NWT\OpenSpout\Reader\XLSX\Sheet[] The list of sheet present in the file */
     protected $sheets;
 
     /** @var int The index of the sheet being read (zero-based) */
@@ -20,7 +20,7 @@ class SheetIterator implements IteratorInterface
     /**
      * @param SheetManager $sheetManager Manages sheets
      *
-     * @throws \OpenSpout\Reader\Exception\NoSheetsFoundException If there are no sheets in the file
+     * @throws \NWT\OpenSpout\Reader\Exception\NoSheetsFoundException If there are no sheets in the file
      */
     public function __construct($sheetManager)
     {
@@ -78,7 +78,7 @@ class SheetIterator implements IteratorInterface
      *
      * @see http://php.net/manual/en/iterator.current.php
      *
-     * @return \OpenSpout\Reader\XLSX\Sheet
+     * @return \NWT\OpenSpout\Reader\XLSX\Sheet
      */
     #[\ReturnTypeWillChange]
     public function current()

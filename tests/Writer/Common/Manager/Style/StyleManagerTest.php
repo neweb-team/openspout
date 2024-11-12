@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Manager\Style;
+namespace NWT\OpenSpout\Writer\Common\Manager\Style;
 
-use OpenSpout\Common\Entity\Cell;
-use OpenSpout\Writer\Common\Creator\Style\StyleBuilder;
+use NWT\OpenSpout\Common\Entity\Cell;
+use NWT\OpenSpout\Writer\Common\Creator\Style\StyleBuilder;
 use PHPUnit\Framework\TestCase;
 
 /**

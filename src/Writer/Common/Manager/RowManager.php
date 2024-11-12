@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Manager;
+namespace NWT\OpenSpout\Writer\Common\Manager;
 
-use OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Entity\Row;
 
 class RowManager
 {

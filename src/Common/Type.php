@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Common;
+namespace NWT\OpenSpout\Common;
 
 /**
  * This class references the supported types.

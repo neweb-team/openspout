@@ -2,7 +2,7 @@
 
 Editing an existing spreadsheet is a pretty common task that OpenSpout is totally capable of doing.
 
-With OpenSpout, it is not possible to do things like `deleteRow(3)` or `insertRowAfter(5, $newRow)`. This is because OpenSpout does not keep an in-memory representation of the entire spreadsheet, to avoid consuming all the memory available with large spreadsheets. This means, OpenSpout does not know how to jump to the 3rd row directly and has especially no way of moving backwards (changing row 3 after having changed row 5). So let's see how this can be done, in a scalable way.
+With OpenSpout, it is not possible to do things like `deleteRow(3)` or `insertRowAfter(5, $newRow)`. This is because NWT\OpenSpout does not keep an in-memory representation of the entire spreadsheet, to avoid consuming all the memory available with large spreadsheets. This means, OpenSpout does not know how to jump to the 3rd row directly and has especially no way of moving backwards (changing row 3 after having changed row 5). So let's see how this can be done, in a scalable way.
 
 For this example, let's assume we have an existing ODS spreadsheet called "my-music.ods" that looks like this:
 
@@ -20,8 +20,8 @@ For this example, let's assume we have an existing ODS spreadsheet called "my-mu
 We'd like to update the missing album for "Yellow Submarine", remove the Bob Marley's songs and add a new song: "Hotel California" from "The Eagles", released in 1976. Here is how this can be done:
 
 ```php
-use OpenSpout\Reader\Common\Creator\ReaderEntityFactory;
-use OpenSpout\Writer\Common\Creator\WriterEntityFactory;
+use NWT\OpenSpout\Reader\Common\Creator\ReaderEntityFactory;
+use NWT\OpenSpout\Writer\Common\Creator\WriterEntityFactory;
 
 $existingFilePath = '/path/to/my-music.ods';
 $newFilePath = '/path/to/my-new-music.ods';

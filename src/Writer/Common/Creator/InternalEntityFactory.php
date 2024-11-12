@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Creator;
+namespace NWT\OpenSpout\Writer\Common\Creator;
 
-use OpenSpout\Writer\Common\Entity\Sheet;
-use OpenSpout\Writer\Common\Entity\Workbook;
-use OpenSpout\Writer\Common\Entity\Worksheet;
-use OpenSpout\Writer\Common\Manager\SheetManager;
+use NWT\OpenSpout\Writer\Common\Entity\Sheet;
+use NWT\OpenSpout\Writer\Common\Entity\Workbook;
+use NWT\OpenSpout\Writer\Common\Entity\Worksheet;
+use NWT\OpenSpout\Writer\Common\Manager\SheetManager;
 
 /**
  * Factory to create internal entities.

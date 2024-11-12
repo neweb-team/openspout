@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Reader\ODS\Creator;
+namespace NWT\OpenSpout\Reader\ODS\Creator;
 
-use OpenSpout\Reader\Common\Manager\RowManager;
+use NWT\OpenSpout\Reader\Common\Manager\RowManager;
 
 /**
  * Factory to create managers.

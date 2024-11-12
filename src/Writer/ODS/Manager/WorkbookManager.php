@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenSpout\Writer\ODS\Manager;
+namespace NWT\OpenSpout\Writer\ODS\Manager;
 
-use OpenSpout\Writer\Common\Entity\Sheet;
-use OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract;
-use OpenSpout\Writer\ODS\Helper\FileSystemHelper;
-use OpenSpout\Writer\ODS\Manager\Style\StyleManager;
+use NWT\OpenSpout\Writer\Common\Entity\Sheet;
+use NWT\OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract;
+use NWT\OpenSpout\Writer\ODS\Helper\FileSystemHelper;
+use NWT\OpenSpout\Writer\ODS\Manager\Style\StyleManager;
 
 /**
  * ODS workbook manager, providing the interfaces to work with workbook.

@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenSpout\Common\Entity\Style;
+namespace NWT\OpenSpout\Common\Entity\Style;
 
-use OpenSpout\Writer\Common\Creator\Style\BorderBuilder;
-use OpenSpout\Writer\Exception\Border\InvalidNameException;
-use OpenSpout\Writer\Exception\Border\InvalidStyleException;
-use OpenSpout\Writer\Exception\Border\InvalidWidthException;
+use NWT\OpenSpout\Writer\Common\Creator\Style\BorderBuilder;
+use NWT\OpenSpout\Writer\Exception\Border\InvalidNameException;
+use NWT\OpenSpout\Writer\Exception\Border\InvalidStyleException;
+use NWT\OpenSpout\Writer\Exception\Border\InvalidWidthException;
 use PHPUnit\Framework\TestCase;
 
 /**

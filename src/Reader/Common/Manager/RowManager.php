@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenSpout\Reader\Common\Manager;
+namespace NWT\OpenSpout\Reader\Common\Manager;
 
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Reader\Common\Creator\InternalEntityFactoryInterface;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Reader\Common\Creator\InternalEntityFactoryInterface;
 
 class RowManager
 {

@@ -1,19 +1,19 @@
 <?php
 
-namespace OpenSpout\Writer\ODS;
+namespace NWT\OpenSpout\Writer\ODS;
 
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Common\Entity\Style\Border;
-use OpenSpout\Common\Entity\Style\CellAlignment;
-use OpenSpout\Common\Entity\Style\Color;
-use OpenSpout\Common\Entity\Style\Style;
-use OpenSpout\Reader\Wrapper\XMLReader;
-use OpenSpout\TestUsingResource;
-use OpenSpout\Writer\Common\Creator\Style\BorderBuilder;
-use OpenSpout\Writer\Common\Creator\Style\StyleBuilder;
-use OpenSpout\Writer\Common\Creator\WriterEntityFactory;
-use OpenSpout\Writer\Exception\WriterNotOpenedException;
-use OpenSpout\Writer\RowCreationHelper;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Entity\Style\Border;
+use NWT\OpenSpout\Common\Entity\Style\CellAlignment;
+use NWT\OpenSpout\Common\Entity\Style\Color;
+use NWT\OpenSpout\Common\Entity\Style\Style;
+use NWT\OpenSpout\Reader\Wrapper\XMLReader;
+use NWT\OpenSpout\TestUsingResource;
+use NWT\OpenSpout\Writer\Common\Creator\Style\BorderBuilder;
+use NWT\OpenSpout\Writer\Common\Creator\Style\StyleBuilder;
+use NWT\OpenSpout\Writer\Common\Creator\WriterEntityFactory;
+use NWT\OpenSpout\Writer\Exception\WriterNotOpenedException;
+use NWT\OpenSpout\Writer\RowCreationHelper;
 use PHPUnit\Framework\TestCase;
 
 /**

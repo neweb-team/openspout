@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Common\Helper;
+namespace NWT\OpenSpout\Common\Helper;
 
 /**
  * This class provides helper functions to work with strings and multibyte strings.

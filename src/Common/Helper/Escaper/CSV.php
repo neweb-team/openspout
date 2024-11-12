@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Common\Helper\Escaper;
+namespace NWT\OpenSpout\Common\Helper\Escaper;
 
 /**
  * Provides functions to escape and unescape data for CSV files.

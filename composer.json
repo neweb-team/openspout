@@ -1,6 +1,6 @@
 {
-    "name": "openspout/openspout",
-    "description": "PHP Library to read and write spreadsheet files (CSV, XLSX and ODS), in a fast and scalable way",
+    "name": "neweb-team/openspout",
+    "description": "PHP Library to read and write spreadsheet files (XLSX only), in a fast and scalable way",
     "license": "MIT",
     "type": "library",
     "keywords": [
@@ -24,9 +24,13 @@
         {
             "name": "Adrien Loison",
             "email": "adrien@box.com"
+        },
+        {
+            "name": "Mikhail Prokofiev",
+            "email": "mikhail26proko@gmail.com"
         }
     ],
-    "homepage": "https://github.com/openspout/openspout",
+    "homepage": "https://github.com/neweb-team/openspout",
     "require": {
         "php": "~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0",
         "ext-dom": "*",
@@ -48,7 +52,7 @@
     },
     "autoload": {
         "psr-4": {
-            "OpenSpout\\": "src/"
+            "NWT\\OpenSpout\\": "src/"
         }
     },
     "autoload-dev": {

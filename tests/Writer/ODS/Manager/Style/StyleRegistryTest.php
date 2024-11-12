@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenSpout\Writer\ODS\Manager\Style;
+namespace NWT\OpenSpout\Writer\ODS\Manager\Style;
 
-use OpenSpout\Writer\Common\Creator\Style\StyleBuilder;
+use NWT\OpenSpout\Writer\Common\Creator\Style\StyleBuilder;
 use PHPUnit\Framework\TestCase;
 
 /**

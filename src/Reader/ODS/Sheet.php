@@ -1,15 +1,15 @@
 <?php
 
-namespace OpenSpout\Reader\ODS;
+namespace NWT\OpenSpout\Reader\ODS;
 
-use OpenSpout\Reader\SheetInterface;
+use NWT\OpenSpout\Reader\SheetInterface;
 
 /**
  * Represents a sheet within a ODS file.
  */
 class Sheet implements SheetInterface
 {
-    /** @var \OpenSpout\Reader\ODS\RowIterator To iterate over sheet's rows */
+    /** @var \NWT\OpenSpout\Reader\ODS\RowIterator To iterate over sheet's rows */
     protected $rowIterator;
 
     /** @var int ID of the sheet */
@@ -44,7 +44,7 @@ class Sheet implements SheetInterface
     }
 
     /**
-     * @return \OpenSpout\Reader\ODS\RowIterator
+     * @return \NWT\OpenSpout\Reader\ODS\RowIterator
      */
     public function getRowIterator()
     {

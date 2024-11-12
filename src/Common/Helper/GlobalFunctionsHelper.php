@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenSpout\Common\Helper;
+namespace NWT\OpenSpout\Common\Helper;
 
 /**
  * This class wraps global functions to facilitate testing.

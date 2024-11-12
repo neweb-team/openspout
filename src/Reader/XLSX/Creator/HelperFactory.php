@@ -1,16 +1,16 @@
 <?php
 
-namespace OpenSpout\Reader\XLSX\Creator;
+namespace NWT\OpenSpout\Reader\XLSX\Creator;
 
-use OpenSpout\Common\Helper\Escaper;
-use OpenSpout\Reader\XLSX\Helper\CellValueFormatter;
-use OpenSpout\Reader\XLSX\Manager\SharedStringsManager;
-use OpenSpout\Reader\XLSX\Manager\StyleManager;
+use NWT\OpenSpout\Common\Helper\Escaper;
+use NWT\OpenSpout\Reader\XLSX\Helper\CellValueFormatter;
+use NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsManager;
+use NWT\OpenSpout\Reader\XLSX\Manager\StyleManager;
 
 /**
  * Factory to create helpers.
  */
-class HelperFactory extends \OpenSpout\Common\Creator\HelperFactory
+class HelperFactory extends \NWT\OpenSpout\Common\Creator\HelperFactory
 {
     /**
      * @param SharedStringsManager $sharedStringsManager Manages shared strings

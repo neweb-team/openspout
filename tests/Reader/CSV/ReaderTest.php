@@ -1,16 +1,16 @@
 <?php
 
-namespace OpenSpout\Reader\CSV;
+namespace NWT\OpenSpout\Reader\CSV;
 
-use OpenSpout\Common\Creator\HelperFactory;
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Common\Helper\EncodingHelper;
-use OpenSpout\Common\Helper\GlobalFunctionsHelper;
-use OpenSpout\Reader\CSV\Creator\InternalEntityFactory;
-use OpenSpout\Reader\CSV\Manager\OptionsManager;
-use OpenSpout\Reader\Exception\ReaderNotOpenedException;
-use OpenSpout\Reader\ReaderInterface;
-use OpenSpout\TestUsingResource;
+use NWT\OpenSpout\Common\Creator\HelperFactory;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Common\Helper\EncodingHelper;
+use NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper;
+use NWT\OpenSpout\Reader\CSV\Creator\InternalEntityFactory;
+use NWT\OpenSpout\Reader\CSV\Manager\OptionsManager;
+use NWT\OpenSpout\Reader\Exception\ReaderNotOpenedException;
+use NWT\OpenSpout\Reader\ReaderInterface;
+use NWT\OpenSpout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -38,8 +38,8 @@ final class ReaderTest extends TestCase
     {
         $this->expectException(IOException::class);
 
-        /** @var \OpenSpout\Common\Helper\GlobalFunctionsHelper|\PHPUnit\Framework\MockObject\MockObject $helperStub */
-        $helperStub = $this->getMockBuilder('\OpenSpout\Common\Helper\GlobalFunctionsHelper')
+        /** @var \NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper|\PHPUnit\Framework\MockObject\MockObject $helperStub */
+        $helperStub = $this->getMockBuilder('\NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper')
             ->onlyMethods(['is_readable'])
             ->getMock()
         ;
@@ -55,8 +55,8 @@ final class ReaderTest extends TestCase
     {
         $this->expectException(IOException::class);
 
-        /** @var \OpenSpout\Common\Helper\GlobalFunctionsHelper|\PHPUnit\Framework\MockObject\MockObject $helperStub */
-        $helperStub = $this->getMockBuilder('\OpenSpout\Common\Helper\GlobalFunctionsHelper')
+        /** @var \NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper|\PHPUnit\Framework\MockObject\MockObject $helperStub */
+        $helperStub = $this->getMockBuilder('\NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper')
             ->onlyMethods(['fopen'])
             ->getMock()
         ;
@@ -261,8 +261,8 @@ final class ReaderTest extends TestCase
         $allRows = [];
         $resourcePath = $this->getResourcePath($fileName);
 
-        /** @var \OpenSpout\Common\Helper\GlobalFunctionsHelper|\PHPUnit\Framework\MockObject\MockObject $helperStub */
-        $helperStub = $this->getMockBuilder('\OpenSpout\Common\Helper\GlobalFunctionsHelper')
+        /** @var \NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper|\PHPUnit\Framework\MockObject\MockObject $helperStub */
+        $helperStub = $this->getMockBuilder('\NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper')
             ->onlyMethods(['function_exists'])
             ->getMock()
         ;
@@ -273,7 +273,7 @@ final class ReaderTest extends TestCase
         ];
         $helperStub->method('function_exists')->willReturnMap($returnValueMap);
 
-        /** @var \OpenSpout\Reader\CSV\Reader $reader */
+        /** @var \NWT\OpenSpout\Reader\CSV\Reader $reader */
         $reader = $this->createCSVReader(null, $helperStub);
         $reader
             ->setEncoding($fileEncoding)
@@ -394,7 +394,7 @@ final class ReaderTest extends TestCase
         // register stream wrapper
         stream_wrapper_register('spout', SpoutTestStream::CLASS_NAME);
 
-        /** @var \OpenSpout\Reader\CSV\Reader $reader */
+        /** @var \NWT\OpenSpout\Reader\CSV\Reader $reader */
         $reader = $this->createCSVReader();
         $reader->open($resourcePath);
 
@@ -421,14 +421,14 @@ final class ReaderTest extends TestCase
     {
         $this->expectException(IOException::class);
 
-        /** @var \OpenSpout\Reader\CSV\Reader $reader */
+        /** @var \NWT\OpenSpout\Reader\CSV\Reader $reader */
         $reader = $this->createCSVReader();
         $reader->open('unsupported://foobar');
     }
 
     /**
-     * @param null|\OpenSpout\Common\Helper\GlobalFunctionsHelper    $optionsManager
-     * @param null|\OpenSpout\Common\Manager\OptionsManagerInterface $globalFunctionsHelper
+     * @param null|\NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper    $optionsManager
+     * @param null|\NWT\OpenSpout\Common\Manager\OptionsManagerInterface $globalFunctionsHelper
      *
      * @return ReaderInterface
      */
@@ -460,7 +460,7 @@ final class ReaderTest extends TestCase
         $allRows = [];
         $resourcePath = $this->getResourcePath($fileName);
 
-        /** @var \OpenSpout\Reader\CSV\Reader $reader */
+        /** @var \NWT\OpenSpout\Reader\CSV\Reader $reader */
         $reader = $this->createCSVReader();
         $reader
             ->setFieldDelimiter($fieldDelimiter)

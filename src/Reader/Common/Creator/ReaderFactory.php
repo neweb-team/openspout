@@ -1,25 +1,25 @@
 <?php
 
-namespace OpenSpout\Reader\Common\Creator;
+namespace NWT\OpenSpout\Reader\Common\Creator;
 
-use OpenSpout\Common\Creator\HelperFactory;
-use OpenSpout\Common\Exception\UnsupportedTypeException;
-use OpenSpout\Common\Type;
-use OpenSpout\Reader\CSV\Creator\InternalEntityFactory as CSVInternalEntityFactory;
-use OpenSpout\Reader\CSV\Manager\OptionsManager as CSVOptionsManager;
-use OpenSpout\Reader\CSV\Reader as CSVReader;
-use OpenSpout\Reader\ODS\Creator\HelperFactory as ODSHelperFactory;
-use OpenSpout\Reader\ODS\Creator\InternalEntityFactory as ODSInternalEntityFactory;
-use OpenSpout\Reader\ODS\Creator\ManagerFactory as ODSManagerFactory;
-use OpenSpout\Reader\ODS\Manager\OptionsManager as ODSOptionsManager;
-use OpenSpout\Reader\ODS\Reader as ODSReader;
-use OpenSpout\Reader\ReaderInterface;
-use OpenSpout\Reader\XLSX\Creator\HelperFactory as XLSXHelperFactory;
-use OpenSpout\Reader\XLSX\Creator\InternalEntityFactory as XLSXInternalEntityFactory;
-use OpenSpout\Reader\XLSX\Creator\ManagerFactory as XLSXManagerFactory;
-use OpenSpout\Reader\XLSX\Manager\OptionsManager as XLSXOptionsManager;
-use OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
-use OpenSpout\Reader\XLSX\Reader as XLSXReader;
+use NWT\OpenSpout\Common\Creator\HelperFactory;
+use NWT\OpenSpout\Common\Exception\UnsupportedTypeException;
+use NWT\OpenSpout\Common\Type;
+use NWT\OpenSpout\Reader\CSV\Creator\InternalEntityFactory as CSVInternalEntityFactory;
+use NWT\OpenSpout\Reader\CSV\Manager\OptionsManager as CSVOptionsManager;
+use NWT\OpenSpout\Reader\CSV\Reader as CSVReader;
+use NWT\OpenSpout\Reader\ODS\Creator\HelperFactory as ODSHelperFactory;
+use NWT\OpenSpout\Reader\ODS\Creator\InternalEntityFactory as ODSInternalEntityFactory;
+use NWT\OpenSpout\Reader\ODS\Creator\ManagerFactory as ODSManagerFactory;
+use NWT\OpenSpout\Reader\ODS\Manager\OptionsManager as ODSOptionsManager;
+use NWT\OpenSpout\Reader\ODS\Reader as ODSReader;
+use NWT\OpenSpout\Reader\ReaderInterface;
+use NWT\OpenSpout\Reader\XLSX\Creator\HelperFactory as XLSXHelperFactory;
+use NWT\OpenSpout\Reader\XLSX\Creator\InternalEntityFactory as XLSXInternalEntityFactory;
+use NWT\OpenSpout\Reader\XLSX\Creator\ManagerFactory as XLSXManagerFactory;
+use NWT\OpenSpout\Reader\XLSX\Manager\OptionsManager as XLSXOptionsManager;
+use NWT\OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory;
+use NWT\OpenSpout\Reader\XLSX\Reader as XLSXReader;
 
 /**
  * This factory is used to create readers, based on the type of the file to be read.
@@ -32,7 +32,7 @@ class ReaderFactory
      *
      * @param string $path The path to the spreadsheet file. Supported extensions are .csv,.ods and .xlsx
      *
-     * @throws \OpenSpout\Common\Exception\UnsupportedTypeException
+     * @throws \NWT\OpenSpout\Common\Exception\UnsupportedTypeException
      *
      * @return ReaderInterface
      */
@@ -48,7 +48,7 @@ class ReaderFactory
      *
      * @param string $readerType Type of the reader to instantiate
      *
-     * @throws \OpenSpout\Common\Exception\UnsupportedTypeException
+     * @throws \NWT\OpenSpout\Common\Exception\UnsupportedTypeException
      *
      * @return ReaderInterface
      */

@@ -1,18 +1,18 @@
 <?php
 
-namespace OpenSpout\Writer;
+namespace NWT\OpenSpout\Writer;
 
-use OpenSpout\Common\Creator\HelperFactory;
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Common\Entity\Style\Style;
-use OpenSpout\Common\Exception\InvalidArgumentException;
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Common\Exception\SpoutException;
-use OpenSpout\Common\Helper\GlobalFunctionsHelper;
-use OpenSpout\Common\Manager\OptionsManagerInterface;
-use OpenSpout\Writer\Common\Entity\Options;
-use OpenSpout\Writer\Exception\WriterAlreadyOpenedException;
-use OpenSpout\Writer\Exception\WriterNotOpenedException;
+use NWT\OpenSpout\Common\Creator\HelperFactory;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Entity\Style\Style;
+use NWT\OpenSpout\Common\Exception\InvalidArgumentException;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Common\Exception\SpoutException;
+use NWT\OpenSpout\Common\Helper\GlobalFunctionsHelper;
+use NWT\OpenSpout\Common\Manager\OptionsManagerInterface;
+use NWT\OpenSpout\Writer\Common\Entity\Options;
+use NWT\OpenSpout\Writer\Exception\WriterAlreadyOpenedException;
+use NWT\OpenSpout\Writer\Exception\WriterNotOpenedException;
 
 abstract class WriterAbstract implements WriterInterface
 {

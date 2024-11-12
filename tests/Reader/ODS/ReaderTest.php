@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenSpout\Reader\ODS;
+namespace NWT\OpenSpout\Reader\ODS;
 
-use OpenSpout\Common\Exception\IOException;
-use OpenSpout\Reader\Common\Creator\ReaderEntityFactory;
-use OpenSpout\Reader\Exception\IteratorNotRewindableException;
-use OpenSpout\TestUsingResource;
+use NWT\OpenSpout\Common\Exception\IOException;
+use NWT\OpenSpout\Reader\Common\Creator\ReaderEntityFactory;
+use NWT\OpenSpout\Reader\Exception\IteratorNotRewindableException;
+use NWT\OpenSpout\TestUsingResource;
 use PHPUnit\Framework\TestCase;
 
 /**

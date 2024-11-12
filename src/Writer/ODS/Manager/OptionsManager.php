@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenSpout\Writer\ODS\Manager;
+namespace NWT\OpenSpout\Writer\ODS\Manager;
 
-use OpenSpout\Common\Manager\OptionsManagerAbstract;
-use OpenSpout\Writer\Common\Creator\Style\StyleBuilder;
-use OpenSpout\Writer\Common\Entity\Options;
+use NWT\OpenSpout\Common\Manager\OptionsManagerAbstract;
+use NWT\OpenSpout\Writer\Common\Creator\Style\StyleBuilder;
+use NWT\OpenSpout\Writer\Common\Entity\Options;
 
 /**
  * ODS Writer options manager.

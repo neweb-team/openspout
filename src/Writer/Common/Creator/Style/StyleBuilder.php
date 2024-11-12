@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenSpout\Writer\Common\Creator\Style;
+namespace NWT\OpenSpout\Writer\Common\Creator\Style;
 
-use OpenSpout\Common\Entity\Style\Border;
-use OpenSpout\Common\Entity\Style\CellAlignment;
-use OpenSpout\Common\Entity\Style\Style;
-use OpenSpout\Common\Exception\InvalidArgumentException;
+use NWT\OpenSpout\Common\Entity\Style\Border;
+use NWT\OpenSpout\Common\Entity\Style\CellAlignment;
+use NWT\OpenSpout\Common\Entity\Style\Style;
+use NWT\OpenSpout\Common\Exception\InvalidArgumentException;
 
 /**
  * Builder to create new styles.

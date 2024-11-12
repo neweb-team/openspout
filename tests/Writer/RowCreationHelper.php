@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenSpout\Writer;
+namespace NWT\OpenSpout\Writer;
 
-use OpenSpout\Common\Entity\Row;
-use OpenSpout\Common\Entity\Style\Style;
-use OpenSpout\Writer\Common\Creator\WriterEntityFactory;
+use NWT\OpenSpout\Common\Entity\Row;
+use NWT\OpenSpout\Common\Entity\Style\Style;
+use NWT\OpenSpout\Writer\Common\Creator\WriterEntityFactory;
 
 /**
  * Trait RowCreationHelper.
